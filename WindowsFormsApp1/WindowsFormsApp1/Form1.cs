@@ -22,14 +22,17 @@ namespace WindowsFormsApp1
 
         }
 
+        // validation allows password that allows login only if password textbox is not empty
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            if (txtPassword.Text==string.Empty)
+            {
+                btnLogin.Enabled = false;
+            }
+            else
+            {
+                btnLogin.Enabled = true;
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -40,6 +43,17 @@ namespace WindowsFormsApp1
         private void btnRegister_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void formLogin_Load(object sender, EventArgs e)
+        {
+
+                btnLogin.Enabled = false;
         }
     }
 }
