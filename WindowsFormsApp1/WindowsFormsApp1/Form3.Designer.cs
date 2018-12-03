@@ -68,33 +68,56 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblIdentityNumber = new System.Windows.Forms.Label();
             this.groupContactDetails = new System.Windows.Forms.GroupBox();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblSuburb = new System.Windows.Forms.Label();
-            this.lblCity = new System.Windows.Forms.Label();
-            this.lblHomeTelephone = new System.Windows.Forms.Label();
-            this.lblMobileTelephone = new System.Windows.Forms.Label();
-            this.lblWorkTelephone = new System.Windows.Forms.Label();
-            this.lblFaxNumber = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.txtSuburb = new System.Windows.Forms.TextBox();
-            this.txtCity = new System.Windows.Forms.TextBox();
-            this.txHomeTelephone = new System.Windows.Forms.TextBox();
-            this.txtMobileTelephone = new System.Windows.Forms.TextBox();
-            this.txtWorkTelephone = new System.Windows.Forms.TextBox();
-            this.txtFaxNumber = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblPostalCode = new System.Windows.Forms.Label();
-            this.txtPostalCode = new System.Windows.Forms.TextBox();
+            this.lblContactDetailsAddress = new System.Windows.Forms.Label();
+            this.lblContactDetailsSuburb = new System.Windows.Forms.Label();
+            this.lblContactDetailsCity = new System.Windows.Forms.Label();
+            this.lblContactDetailsHomeTelephone = new System.Windows.Forms.Label();
+            this.lblContactDetailsMobileTelephone = new System.Windows.Forms.Label();
+            this.lblContactDetailsWorkTelephone = new System.Windows.Forms.Label();
+            this.lblContactDetailsFaxNumber = new System.Windows.Forms.Label();
+            this.lblContactDetailsEmail = new System.Windows.Forms.Label();
+            this.txtContactDetailsAddress = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsSuburb = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsCity = new System.Windows.Forms.TextBox();
+            this.txContactDetailsHomeTelephone = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsMobileTelephone = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsWorkTelephone = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsFaxNumber = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsEmail = new System.Windows.Forms.TextBox();
+            this.lbContactDetailslPostalCode = new System.Windows.Forms.Label();
+            this.txtContactDetailsPostalCode = new System.Windows.Forms.TextBox();
             this.linkContactDetailsCancel = new System.Windows.Forms.LinkLabel();
             this.linkContactDetailsSae = new System.Windows.Forms.LinkLabel();
             this.linkContactDetailsEdit = new System.Windows.Forms.LinkLabel();
+            this.groupEmergencyContactDetails = new System.Windows.Forms.GroupBox();
+            this.linkEmergencyContactDetailsCancel = new System.Windows.Forms.LinkLabel();
+            this.linkEmergencyContactDetailsSave = new System.Windows.Forms.LinkLabel();
+            this.linkEmergencyContactDetailsEdit = new System.Windows.Forms.LinkLabel();
+            this.txtEmergencyContactDetailsPostalCode = new System.Windows.Forms.TextBox();
+            this.lblEmergencyDetailsPostalCode = new System.Windows.Forms.Label();
+            this.txtEmergencyContactDetailsEmail = new System.Windows.Forms.TextBox();
+            this.txtEmergencyContactDetailsFaxNumber = new System.Windows.Forms.TextBox();
+            this.txtEmergencyContactDetailsWorkTelephone = new System.Windows.Forms.TextBox();
+            this.txtEmergencyDetailsMobileTelephone = new System.Windows.Forms.TextBox();
+            this.txtEmergencyContactDetailsHomeTelephone = new System.Windows.Forms.TextBox();
+            this.txtEmergencyContactDetailsCity = new System.Windows.Forms.TextBox();
+            this.txtEmergencyContactDetailsSuburb = new System.Windows.Forms.TextBox();
+            this.txtEmergenctContactDetailsAddress = new System.Windows.Forms.TextBox();
+            this.lblEmergencyContactDetailsEmail = new System.Windows.Forms.Label();
+            this.lblEmergencyContactDetailsFaxNumber = new System.Windows.Forms.Label();
+            this.lblEmergencyContactDetailsWorkTelephone = new System.Windows.Forms.Label();
+            this.lblEmergencyContactDetailsMobileTelephone = new System.Windows.Forms.Label();
+            this.lblEmergencyContactDetailsHomeTelephone = new System.Windows.Forms.Label();
+            this.lblEmergencyContactDetailsCity = new System.Windows.Forms.Label();
+            this.lblEmergencyContactDetailsSuburb = new System.Windows.Forms.Label();
+            this.lblEmergencyContactDetailsAddress = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picProfileImage)).BeginInit();
             this.groupLoginDetails.SuspendLayout();
             this.groupPassword.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupPersonalDetails.SuspendLayout();
             this.groupContactDetails.SuspendLayout();
+            this.groupEmergencyContactDetails.SuspendLayout();
             this.SuspendLayout();
             // 
             // picProfileImage
@@ -479,24 +502,24 @@
             this.groupContactDetails.Controls.Add(this.linkContactDetailsCancel);
             this.groupContactDetails.Controls.Add(this.linkContactDetailsSae);
             this.groupContactDetails.Controls.Add(this.linkContactDetailsEdit);
-            this.groupContactDetails.Controls.Add(this.txtPostalCode);
-            this.groupContactDetails.Controls.Add(this.lblPostalCode);
-            this.groupContactDetails.Controls.Add(this.txtEmail);
-            this.groupContactDetails.Controls.Add(this.txtFaxNumber);
-            this.groupContactDetails.Controls.Add(this.txtWorkTelephone);
-            this.groupContactDetails.Controls.Add(this.txtMobileTelephone);
-            this.groupContactDetails.Controls.Add(this.txHomeTelephone);
-            this.groupContactDetails.Controls.Add(this.txtCity);
-            this.groupContactDetails.Controls.Add(this.txtSuburb);
-            this.groupContactDetails.Controls.Add(this.txtAddress);
-            this.groupContactDetails.Controls.Add(this.lblEmail);
-            this.groupContactDetails.Controls.Add(this.lblFaxNumber);
-            this.groupContactDetails.Controls.Add(this.lblWorkTelephone);
-            this.groupContactDetails.Controls.Add(this.lblMobileTelephone);
-            this.groupContactDetails.Controls.Add(this.lblHomeTelephone);
-            this.groupContactDetails.Controls.Add(this.lblCity);
-            this.groupContactDetails.Controls.Add(this.lblSuburb);
-            this.groupContactDetails.Controls.Add(this.lblAddress);
+            this.groupContactDetails.Controls.Add(this.txtContactDetailsPostalCode);
+            this.groupContactDetails.Controls.Add(this.lbContactDetailslPostalCode);
+            this.groupContactDetails.Controls.Add(this.txtContactDetailsEmail);
+            this.groupContactDetails.Controls.Add(this.txtContactDetailsFaxNumber);
+            this.groupContactDetails.Controls.Add(this.txtContactDetailsWorkTelephone);
+            this.groupContactDetails.Controls.Add(this.txtContactDetailsMobileTelephone);
+            this.groupContactDetails.Controls.Add(this.txContactDetailsHomeTelephone);
+            this.groupContactDetails.Controls.Add(this.txtContactDetailsCity);
+            this.groupContactDetails.Controls.Add(this.txtContactDetailsSuburb);
+            this.groupContactDetails.Controls.Add(this.txtContactDetailsAddress);
+            this.groupContactDetails.Controls.Add(this.lblContactDetailsEmail);
+            this.groupContactDetails.Controls.Add(this.lblContactDetailsFaxNumber);
+            this.groupContactDetails.Controls.Add(this.lblContactDetailsWorkTelephone);
+            this.groupContactDetails.Controls.Add(this.lblContactDetailsMobileTelephone);
+            this.groupContactDetails.Controls.Add(this.lblContactDetailsHomeTelephone);
+            this.groupContactDetails.Controls.Add(this.lblContactDetailsCity);
+            this.groupContactDetails.Controls.Add(this.lblContactDetailsSuburb);
+            this.groupContactDetails.Controls.Add(this.lblContactDetailsAddress);
             this.groupContactDetails.Location = new System.Drawing.Point(12, 506);
             this.groupContactDetails.Name = "groupContactDetails";
             this.groupContactDetails.Size = new System.Drawing.Size(458, 296);
@@ -504,150 +527,150 @@
             this.groupContactDetails.TabStop = false;
             this.groupContactDetails.Text = "Contact Details";
             // 
-            // lblAddress
+            // lblContactDetailsAddress
             // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(7, 30);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(45, 13);
-            this.lblAddress.TabIndex = 0;
-            this.lblAddress.Text = "Address";
+            this.lblContactDetailsAddress.AutoSize = true;
+            this.lblContactDetailsAddress.Location = new System.Drawing.Point(7, 30);
+            this.lblContactDetailsAddress.Name = "lblContactDetailsAddress";
+            this.lblContactDetailsAddress.Size = new System.Drawing.Size(45, 13);
+            this.lblContactDetailsAddress.TabIndex = 0;
+            this.lblContactDetailsAddress.Text = "Address";
             // 
-            // lblSuburb
+            // lblContactDetailsSuburb
             // 
-            this.lblSuburb.AutoSize = true;
-            this.lblSuburb.Location = new System.Drawing.Point(7, 82);
-            this.lblSuburb.Name = "lblSuburb";
-            this.lblSuburb.Size = new System.Drawing.Size(41, 13);
-            this.lblSuburb.TabIndex = 1;
-            this.lblSuburb.Text = "Suburb";
+            this.lblContactDetailsSuburb.AutoSize = true;
+            this.lblContactDetailsSuburb.Location = new System.Drawing.Point(7, 82);
+            this.lblContactDetailsSuburb.Name = "lblContactDetailsSuburb";
+            this.lblContactDetailsSuburb.Size = new System.Drawing.Size(41, 13);
+            this.lblContactDetailsSuburb.TabIndex = 1;
+            this.lblContactDetailsSuburb.Text = "Suburb";
             // 
-            // lblCity
+            // lblContactDetailsCity
             // 
-            this.lblCity.AutoSize = true;
-            this.lblCity.Location = new System.Drawing.Point(7, 106);
-            this.lblCity.Name = "lblCity";
-            this.lblCity.Size = new System.Drawing.Size(24, 13);
-            this.lblCity.TabIndex = 2;
-            this.lblCity.Text = "City";
+            this.lblContactDetailsCity.AutoSize = true;
+            this.lblContactDetailsCity.Location = new System.Drawing.Point(7, 106);
+            this.lblContactDetailsCity.Name = "lblContactDetailsCity";
+            this.lblContactDetailsCity.Size = new System.Drawing.Size(24, 13);
+            this.lblContactDetailsCity.TabIndex = 2;
+            this.lblContactDetailsCity.Text = "City";
             // 
-            // lblHomeTelephone
+            // lblContactDetailsHomeTelephone
             // 
-            this.lblHomeTelephone.AutoSize = true;
-            this.lblHomeTelephone.Location = new System.Drawing.Point(5, 135);
-            this.lblHomeTelephone.Name = "lblHomeTelephone";
-            this.lblHomeTelephone.Size = new System.Drawing.Size(89, 13);
-            this.lblHomeTelephone.TabIndex = 3;
-            this.lblHomeTelephone.Text = "Home Telephone";
+            this.lblContactDetailsHomeTelephone.AutoSize = true;
+            this.lblContactDetailsHomeTelephone.Location = new System.Drawing.Point(5, 135);
+            this.lblContactDetailsHomeTelephone.Name = "lblContactDetailsHomeTelephone";
+            this.lblContactDetailsHomeTelephone.Size = new System.Drawing.Size(89, 13);
+            this.lblContactDetailsHomeTelephone.TabIndex = 3;
+            this.lblContactDetailsHomeTelephone.Text = "Home Telephone";
             // 
-            // lblMobileTelephone
+            // lblContactDetailsMobileTelephone
             // 
-            this.lblMobileTelephone.AutoSize = true;
-            this.lblMobileTelephone.Location = new System.Drawing.Point(7, 166);
-            this.lblMobileTelephone.Name = "lblMobileTelephone";
-            this.lblMobileTelephone.Size = new System.Drawing.Size(89, 13);
-            this.lblMobileTelephone.TabIndex = 4;
-            this.lblMobileTelephone.Text = "MobileTelephone";
+            this.lblContactDetailsMobileTelephone.AutoSize = true;
+            this.lblContactDetailsMobileTelephone.Location = new System.Drawing.Point(7, 166);
+            this.lblContactDetailsMobileTelephone.Name = "lblContactDetailsMobileTelephone";
+            this.lblContactDetailsMobileTelephone.Size = new System.Drawing.Size(89, 13);
+            this.lblContactDetailsMobileTelephone.TabIndex = 4;
+            this.lblContactDetailsMobileTelephone.Text = "MobileTelephone";
             // 
-            // lblWorkTelephone
+            // lblContactDetailsWorkTelephone
             // 
-            this.lblWorkTelephone.AutoSize = true;
-            this.lblWorkTelephone.Location = new System.Drawing.Point(8, 200);
-            this.lblWorkTelephone.Name = "lblWorkTelephone";
-            this.lblWorkTelephone.Size = new System.Drawing.Size(87, 13);
-            this.lblWorkTelephone.TabIndex = 5;
-            this.lblWorkTelephone.Text = "Work Telephone";
+            this.lblContactDetailsWorkTelephone.AutoSize = true;
+            this.lblContactDetailsWorkTelephone.Location = new System.Drawing.Point(8, 200);
+            this.lblContactDetailsWorkTelephone.Name = "lblContactDetailsWorkTelephone";
+            this.lblContactDetailsWorkTelephone.Size = new System.Drawing.Size(87, 13);
+            this.lblContactDetailsWorkTelephone.TabIndex = 5;
+            this.lblContactDetailsWorkTelephone.Text = "Work Telephone";
             // 
-            // lblFaxNumber
+            // lblContactDetailsFaxNumber
             // 
-            this.lblFaxNumber.AutoSize = true;
-            this.lblFaxNumber.Location = new System.Drawing.Point(7, 229);
-            this.lblFaxNumber.Name = "lblFaxNumber";
-            this.lblFaxNumber.Size = new System.Drawing.Size(64, 13);
-            this.lblFaxNumber.TabIndex = 6;
-            this.lblFaxNumber.Text = "Fax Number";
+            this.lblContactDetailsFaxNumber.AutoSize = true;
+            this.lblContactDetailsFaxNumber.Location = new System.Drawing.Point(7, 229);
+            this.lblContactDetailsFaxNumber.Name = "lblContactDetailsFaxNumber";
+            this.lblContactDetailsFaxNumber.Size = new System.Drawing.Size(64, 13);
+            this.lblContactDetailsFaxNumber.TabIndex = 6;
+            this.lblContactDetailsFaxNumber.Text = "Fax Number";
             // 
-            // lblEmail
+            // lblContactDetailsEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(11, 260);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
-            this.lblEmail.TabIndex = 7;
-            this.lblEmail.Text = "Email";
+            this.lblContactDetailsEmail.AutoSize = true;
+            this.lblContactDetailsEmail.Location = new System.Drawing.Point(11, 260);
+            this.lblContactDetailsEmail.Name = "lblContactDetailsEmail";
+            this.lblContactDetailsEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblContactDetailsEmail.TabIndex = 7;
+            this.lblContactDetailsEmail.Text = "Email";
             // 
-            // txtAddress
+            // txtContactDetailsAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(116, 30);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(186, 40);
-            this.txtAddress.TabIndex = 8;
+            this.txtContactDetailsAddress.Location = new System.Drawing.Point(116, 30);
+            this.txtContactDetailsAddress.Multiline = true;
+            this.txtContactDetailsAddress.Name = "txtContactDetailsAddress";
+            this.txtContactDetailsAddress.Size = new System.Drawing.Size(186, 40);
+            this.txtContactDetailsAddress.TabIndex = 8;
             // 
-            // txtSuburb
+            // txtContactDetailsSuburb
             // 
-            this.txtSuburb.Location = new System.Drawing.Point(116, 82);
-            this.txtSuburb.Name = "txtSuburb";
-            this.txtSuburb.Size = new System.Drawing.Size(186, 20);
-            this.txtSuburb.TabIndex = 9;
+            this.txtContactDetailsSuburb.Location = new System.Drawing.Point(116, 82);
+            this.txtContactDetailsSuburb.Name = "txtContactDetailsSuburb";
+            this.txtContactDetailsSuburb.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsSuburb.TabIndex = 9;
             // 
-            // txtCity
+            // txtContactDetailsCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(117, 106);
-            this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(186, 20);
-            this.txtCity.TabIndex = 10;
+            this.txtContactDetailsCity.Location = new System.Drawing.Point(117, 106);
+            this.txtContactDetailsCity.Name = "txtContactDetailsCity";
+            this.txtContactDetailsCity.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsCity.TabIndex = 10;
             // 
-            // txHomeTelephone
+            // txContactDetailsHomeTelephone
             // 
-            this.txHomeTelephone.Location = new System.Drawing.Point(116, 135);
-            this.txHomeTelephone.Name = "txHomeTelephone";
-            this.txHomeTelephone.Size = new System.Drawing.Size(186, 20);
-            this.txHomeTelephone.TabIndex = 11;
+            this.txContactDetailsHomeTelephone.Location = new System.Drawing.Point(116, 135);
+            this.txContactDetailsHomeTelephone.Name = "txContactDetailsHomeTelephone";
+            this.txContactDetailsHomeTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txContactDetailsHomeTelephone.TabIndex = 11;
             // 
-            // txtMobileTelephone
+            // txtContactDetailsMobileTelephone
             // 
-            this.txtMobileTelephone.Location = new System.Drawing.Point(117, 166);
-            this.txtMobileTelephone.Name = "txtMobileTelephone";
-            this.txtMobileTelephone.Size = new System.Drawing.Size(186, 20);
-            this.txtMobileTelephone.TabIndex = 12;
+            this.txtContactDetailsMobileTelephone.Location = new System.Drawing.Point(117, 166);
+            this.txtContactDetailsMobileTelephone.Name = "txtContactDetailsMobileTelephone";
+            this.txtContactDetailsMobileTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsMobileTelephone.TabIndex = 12;
             // 
-            // txtWorkTelephone
+            // txtContactDetailsWorkTelephone
             // 
-            this.txtWorkTelephone.Location = new System.Drawing.Point(117, 200);
-            this.txtWorkTelephone.Name = "txtWorkTelephone";
-            this.txtWorkTelephone.Size = new System.Drawing.Size(186, 20);
-            this.txtWorkTelephone.TabIndex = 13;
+            this.txtContactDetailsWorkTelephone.Location = new System.Drawing.Point(117, 200);
+            this.txtContactDetailsWorkTelephone.Name = "txtContactDetailsWorkTelephone";
+            this.txtContactDetailsWorkTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsWorkTelephone.TabIndex = 13;
             // 
-            // txtFaxNumber
+            // txtContactDetailsFaxNumber
             // 
-            this.txtFaxNumber.Location = new System.Drawing.Point(116, 229);
-            this.txtFaxNumber.Name = "txtFaxNumber";
-            this.txtFaxNumber.Size = new System.Drawing.Size(186, 20);
-            this.txtFaxNumber.TabIndex = 14;
+            this.txtContactDetailsFaxNumber.Location = new System.Drawing.Point(116, 229);
+            this.txtContactDetailsFaxNumber.Name = "txtContactDetailsFaxNumber";
+            this.txtContactDetailsFaxNumber.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsFaxNumber.TabIndex = 14;
             // 
-            // txtEmail
+            // txtContactDetailsEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(117, 260);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(186, 20);
-            this.txtEmail.TabIndex = 15;
+            this.txtContactDetailsEmail.Location = new System.Drawing.Point(117, 260);
+            this.txtContactDetailsEmail.Name = "txtContactDetailsEmail";
+            this.txtContactDetailsEmail.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsEmail.TabIndex = 15;
             // 
-            // lblPostalCode
+            // lbContactDetailslPostalCode
             // 
-            this.lblPostalCode.AutoSize = true;
-            this.lblPostalCode.Location = new System.Drawing.Point(324, 106);
-            this.lblPostalCode.Name = "lblPostalCode";
-            this.lblPostalCode.Size = new System.Drawing.Size(64, 13);
-            this.lblPostalCode.TabIndex = 16;
-            this.lblPostalCode.Text = "Postal Code";
+            this.lbContactDetailslPostalCode.AutoSize = true;
+            this.lbContactDetailslPostalCode.Location = new System.Drawing.Point(324, 106);
+            this.lbContactDetailslPostalCode.Name = "lbContactDetailslPostalCode";
+            this.lbContactDetailslPostalCode.Size = new System.Drawing.Size(64, 13);
+            this.lbContactDetailslPostalCode.TabIndex = 16;
+            this.lbContactDetailslPostalCode.Text = "Postal Code";
             // 
-            // txtPostalCode
+            // txtContactDetailsPostalCode
             // 
-            this.txtPostalCode.Location = new System.Drawing.Point(327, 135);
-            this.txtPostalCode.Name = "txtPostalCode";
-            this.txtPostalCode.Size = new System.Drawing.Size(100, 20);
-            this.txtPostalCode.TabIndex = 17;
+            this.txtContactDetailsPostalCode.Location = new System.Drawing.Point(327, 135);
+            this.txtContactDetailsPostalCode.Name = "txtContactDetailsPostalCode";
+            this.txtContactDetailsPostalCode.Size = new System.Drawing.Size(100, 20);
+            this.txtContactDetailsPostalCode.TabIndex = 17;
             // 
             // linkContactDetailsCancel
             // 
@@ -679,11 +702,217 @@
             this.linkContactDetailsEdit.TabStop = true;
             this.linkContactDetailsEdit.Text = "Edit";
             // 
+            // groupEmergencyContactDetails
+            // 
+            this.groupEmergencyContactDetails.Controls.Add(this.linkEmergencyContactDetailsCancel);
+            this.groupEmergencyContactDetails.Controls.Add(this.linkEmergencyContactDetailsSave);
+            this.groupEmergencyContactDetails.Controls.Add(this.linkEmergencyContactDetailsEdit);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsPostalCode);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyDetailsPostalCode);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsEmail);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsFaxNumber);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsWorkTelephone);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyDetailsMobileTelephone);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsHomeTelephone);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsCity);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsSuburb);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergenctContactDetailsAddress);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsEmail);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsFaxNumber);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsWorkTelephone);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsMobileTelephone);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsHomeTelephone);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsCity);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsSuburb);
+            this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsAddress);
+            this.groupEmergencyContactDetails.Location = new System.Drawing.Point(488, 38);
+            this.groupEmergencyContactDetails.Name = "groupEmergencyContactDetails";
+            this.groupEmergencyContactDetails.Size = new System.Drawing.Size(525, 384);
+            this.groupEmergencyContactDetails.TabIndex = 6;
+            this.groupEmergencyContactDetails.TabStop = false;
+            this.groupEmergencyContactDetails.Text = "Emergency Contact Details";
+            // 
+            // linkEmergencyContactDetailsCancel
+            // 
+            this.linkEmergencyContactDetailsCancel.AutoSize = true;
+            this.linkEmergencyContactDetailsCancel.Location = new System.Drawing.Point(386, 315);
+            this.linkEmergencyContactDetailsCancel.Name = "linkEmergencyContactDetailsCancel";
+            this.linkEmergencyContactDetailsCancel.Size = new System.Drawing.Size(40, 13);
+            this.linkEmergencyContactDetailsCancel.TabIndex = 20;
+            this.linkEmergencyContactDetailsCancel.TabStop = true;
+            this.linkEmergencyContactDetailsCancel.Text = "Cancel";
+            // 
+            // linkEmergencyContactDetailsSave
+            // 
+            this.linkEmergencyContactDetailsSave.AutoSize = true;
+            this.linkEmergencyContactDetailsSave.Location = new System.Drawing.Point(348, 315);
+            this.linkEmergencyContactDetailsSave.Name = "linkEmergencyContactDetailsSave";
+            this.linkEmergencyContactDetailsSave.Size = new System.Drawing.Size(32, 13);
+            this.linkEmergencyContactDetailsSave.TabIndex = 19;
+            this.linkEmergencyContactDetailsSave.TabStop = true;
+            this.linkEmergencyContactDetailsSave.Text = "Save";
+            // 
+            // linkEmergencyContactDetailsEdit
+            // 
+            this.linkEmergencyContactDetailsEdit.AutoSize = true;
+            this.linkEmergencyContactDetailsEdit.Location = new System.Drawing.Point(317, 315);
+            this.linkEmergencyContactDetailsEdit.Name = "linkEmergencyContactDetailsEdit";
+            this.linkEmergencyContactDetailsEdit.Size = new System.Drawing.Size(25, 13);
+            this.linkEmergencyContactDetailsEdit.TabIndex = 18;
+            this.linkEmergencyContactDetailsEdit.TabStop = true;
+            this.linkEmergencyContactDetailsEdit.Text = "Edit";
+            // 
+            // txtEmergencyContactDetailsPostalCode
+            // 
+            this.txtEmergencyContactDetailsPostalCode.Location = new System.Drawing.Point(326, 214);
+            this.txtEmergencyContactDetailsPostalCode.Name = "txtEmergencyContactDetailsPostalCode";
+            this.txtEmergencyContactDetailsPostalCode.Size = new System.Drawing.Size(100, 20);
+            this.txtEmergencyContactDetailsPostalCode.TabIndex = 17;
+            // 
+            // lblEmergencyDetailsPostalCode
+            // 
+            this.lblEmergencyDetailsPostalCode.AutoSize = true;
+            this.lblEmergencyDetailsPostalCode.Location = new System.Drawing.Point(323, 185);
+            this.lblEmergencyDetailsPostalCode.Name = "lblEmergencyDetailsPostalCode";
+            this.lblEmergencyDetailsPostalCode.Size = new System.Drawing.Size(64, 13);
+            this.lblEmergencyDetailsPostalCode.TabIndex = 16;
+            this.lblEmergencyDetailsPostalCode.Text = "Postal Code";
+            // 
+            // txtEmergencyContactDetailsEmail
+            // 
+            this.txtEmergencyContactDetailsEmail.Location = new System.Drawing.Point(116, 339);
+            this.txtEmergencyContactDetailsEmail.Name = "txtEmergencyContactDetailsEmail";
+            this.txtEmergencyContactDetailsEmail.Size = new System.Drawing.Size(186, 20);
+            this.txtEmergencyContactDetailsEmail.TabIndex = 15;
+            // 
+            // txtEmergencyContactDetailsFaxNumber
+            // 
+            this.txtEmergencyContactDetailsFaxNumber.Location = new System.Drawing.Point(115, 308);
+            this.txtEmergencyContactDetailsFaxNumber.Name = "txtEmergencyContactDetailsFaxNumber";
+            this.txtEmergencyContactDetailsFaxNumber.Size = new System.Drawing.Size(186, 20);
+            this.txtEmergencyContactDetailsFaxNumber.TabIndex = 14;
+            // 
+            // txtEmergencyContactDetailsWorkTelephone
+            // 
+            this.txtEmergencyContactDetailsWorkTelephone.Location = new System.Drawing.Point(116, 279);
+            this.txtEmergencyContactDetailsWorkTelephone.Name = "txtEmergencyContactDetailsWorkTelephone";
+            this.txtEmergencyContactDetailsWorkTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtEmergencyContactDetailsWorkTelephone.TabIndex = 13;
+            // 
+            // txtEmergencyDetailsMobileTelephone
+            // 
+            this.txtEmergencyDetailsMobileTelephone.Location = new System.Drawing.Point(116, 245);
+            this.txtEmergencyDetailsMobileTelephone.Name = "txtEmergencyDetailsMobileTelephone";
+            this.txtEmergencyDetailsMobileTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtEmergencyDetailsMobileTelephone.TabIndex = 12;
+            // 
+            // txtEmergencyContactDetailsHomeTelephone
+            // 
+            this.txtEmergencyContactDetailsHomeTelephone.Location = new System.Drawing.Point(115, 214);
+            this.txtEmergencyContactDetailsHomeTelephone.Name = "txtEmergencyContactDetailsHomeTelephone";
+            this.txtEmergencyContactDetailsHomeTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtEmergencyContactDetailsHomeTelephone.TabIndex = 11;
+            // 
+            // txtEmergencyContactDetailsCity
+            // 
+            this.txtEmergencyContactDetailsCity.Location = new System.Drawing.Point(116, 185);
+            this.txtEmergencyContactDetailsCity.Name = "txtEmergencyContactDetailsCity";
+            this.txtEmergencyContactDetailsCity.Size = new System.Drawing.Size(186, 20);
+            this.txtEmergencyContactDetailsCity.TabIndex = 10;
+            // 
+            // txtEmergencyContactDetailsSuburb
+            // 
+            this.txtEmergencyContactDetailsSuburb.Location = new System.Drawing.Point(115, 161);
+            this.txtEmergencyContactDetailsSuburb.Name = "txtEmergencyContactDetailsSuburb";
+            this.txtEmergencyContactDetailsSuburb.Size = new System.Drawing.Size(186, 20);
+            this.txtEmergencyContactDetailsSuburb.TabIndex = 9;
+            // 
+            // txtEmergenctContactDetailsAddress
+            // 
+            this.txtEmergenctContactDetailsAddress.Location = new System.Drawing.Point(115, 109);
+            this.txtEmergenctContactDetailsAddress.Multiline = true;
+            this.txtEmergenctContactDetailsAddress.Name = "txtEmergenctContactDetailsAddress";
+            this.txtEmergenctContactDetailsAddress.Size = new System.Drawing.Size(186, 40);
+            this.txtEmergenctContactDetailsAddress.TabIndex = 8;
+            // 
+            // lblEmergencyContactDetailsEmail
+            // 
+            this.lblEmergencyContactDetailsEmail.AutoSize = true;
+            this.lblEmergencyContactDetailsEmail.Location = new System.Drawing.Point(10, 339);
+            this.lblEmergencyContactDetailsEmail.Name = "lblEmergencyContactDetailsEmail";
+            this.lblEmergencyContactDetailsEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmergencyContactDetailsEmail.TabIndex = 7;
+            this.lblEmergencyContactDetailsEmail.Text = "Email";
+            // 
+            // lblEmergencyContactDetailsFaxNumber
+            // 
+            this.lblEmergencyContactDetailsFaxNumber.AutoSize = true;
+            this.lblEmergencyContactDetailsFaxNumber.Location = new System.Drawing.Point(6, 308);
+            this.lblEmergencyContactDetailsFaxNumber.Name = "lblEmergencyContactDetailsFaxNumber";
+            this.lblEmergencyContactDetailsFaxNumber.Size = new System.Drawing.Size(64, 13);
+            this.lblEmergencyContactDetailsFaxNumber.TabIndex = 6;
+            this.lblEmergencyContactDetailsFaxNumber.Text = "Fax Number";
+            // 
+            // lblEmergencyContactDetailsWorkTelephone
+            // 
+            this.lblEmergencyContactDetailsWorkTelephone.AutoSize = true;
+            this.lblEmergencyContactDetailsWorkTelephone.Location = new System.Drawing.Point(7, 279);
+            this.lblEmergencyContactDetailsWorkTelephone.Name = "lblEmergencyContactDetailsWorkTelephone";
+            this.lblEmergencyContactDetailsWorkTelephone.Size = new System.Drawing.Size(87, 13);
+            this.lblEmergencyContactDetailsWorkTelephone.TabIndex = 5;
+            this.lblEmergencyContactDetailsWorkTelephone.Text = "Work Telephone";
+            // 
+            // lblEmergencyContactDetailsMobileTelephone
+            // 
+            this.lblEmergencyContactDetailsMobileTelephone.AutoSize = true;
+            this.lblEmergencyContactDetailsMobileTelephone.Location = new System.Drawing.Point(6, 245);
+            this.lblEmergencyContactDetailsMobileTelephone.Name = "lblEmergencyContactDetailsMobileTelephone";
+            this.lblEmergencyContactDetailsMobileTelephone.Size = new System.Drawing.Size(89, 13);
+            this.lblEmergencyContactDetailsMobileTelephone.TabIndex = 4;
+            this.lblEmergencyContactDetailsMobileTelephone.Text = "MobileTelephone";
+            // 
+            // lblEmergencyContactDetailsHomeTelephone
+            // 
+            this.lblEmergencyContactDetailsHomeTelephone.AutoSize = true;
+            this.lblEmergencyContactDetailsHomeTelephone.Location = new System.Drawing.Point(4, 214);
+            this.lblEmergencyContactDetailsHomeTelephone.Name = "lblEmergencyContactDetailsHomeTelephone";
+            this.lblEmergencyContactDetailsHomeTelephone.Size = new System.Drawing.Size(89, 13);
+            this.lblEmergencyContactDetailsHomeTelephone.TabIndex = 3;
+            this.lblEmergencyContactDetailsHomeTelephone.Text = "Home Telephone";
+            // 
+            // lblEmergencyContactDetailsCity
+            // 
+            this.lblEmergencyContactDetailsCity.AutoSize = true;
+            this.lblEmergencyContactDetailsCity.Location = new System.Drawing.Point(6, 185);
+            this.lblEmergencyContactDetailsCity.Name = "lblEmergencyContactDetailsCity";
+            this.lblEmergencyContactDetailsCity.Size = new System.Drawing.Size(24, 13);
+            this.lblEmergencyContactDetailsCity.TabIndex = 2;
+            this.lblEmergencyContactDetailsCity.Text = "City";
+            // 
+            // lblEmergencyContactDetailsSuburb
+            // 
+            this.lblEmergencyContactDetailsSuburb.AutoSize = true;
+            this.lblEmergencyContactDetailsSuburb.Location = new System.Drawing.Point(6, 161);
+            this.lblEmergencyContactDetailsSuburb.Name = "lblEmergencyContactDetailsSuburb";
+            this.lblEmergencyContactDetailsSuburb.Size = new System.Drawing.Size(41, 13);
+            this.lblEmergencyContactDetailsSuburb.TabIndex = 1;
+            this.lblEmergencyContactDetailsSuburb.Text = "Suburb";
+            // 
+            // lblEmergencyContactDetailsAddress
+            // 
+            this.lblEmergencyContactDetailsAddress.AutoSize = true;
+            this.lblEmergencyContactDetailsAddress.Location = new System.Drawing.Point(6, 109);
+            this.lblEmergencyContactDetailsAddress.Name = "lblEmergencyContactDetailsAddress";
+            this.lblEmergencyContactDetailsAddress.Size = new System.Drawing.Size(45, 13);
+            this.lblEmergencyContactDetailsAddress.TabIndex = 0;
+            this.lblEmergencyContactDetailsAddress.Text = "Address";
+            // 
             // formPersonalHealthRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 814);
+            this.Controls.Add(this.groupEmergencyContactDetails);
             this.Controls.Add(this.groupContactDetails);
             this.Controls.Add(this.groupPersonalDetails);
             this.Controls.Add(this.toolStrip1);
@@ -702,6 +931,8 @@
             this.groupPersonalDetails.PerformLayout();
             this.groupContactDetails.ResumeLayout(false);
             this.groupContactDetails.PerformLayout();
+            this.groupEmergencyContactDetails.ResumeLayout(false);
+            this.groupEmergencyContactDetails.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -748,26 +979,48 @@
         private System.Windows.Forms.RadioButton radioMale;
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.GroupBox groupContactDetails;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtFaxNumber;
-        private System.Windows.Forms.TextBox txtWorkTelephone;
-        private System.Windows.Forms.TextBox txtMobileTelephone;
-        private System.Windows.Forms.TextBox txHomeTelephone;
-        private System.Windows.Forms.TextBox txtCity;
-        private System.Windows.Forms.TextBox txtSuburb;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblFaxNumber;
-        private System.Windows.Forms.Label lblWorkTelephone;
-        private System.Windows.Forms.Label lblMobileTelephone;
-        private System.Windows.Forms.Label lblHomeTelephone;
-        private System.Windows.Forms.Label lblCity;
-        private System.Windows.Forms.Label lblSuburb;
-        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox txtContactDetailsEmail;
+        private System.Windows.Forms.TextBox txtContactDetailsFaxNumber;
+        private System.Windows.Forms.TextBox txtContactDetailsWorkTelephone;
+        private System.Windows.Forms.TextBox txtContactDetailsMobileTelephone;
+        private System.Windows.Forms.TextBox txContactDetailsHomeTelephone;
+        private System.Windows.Forms.TextBox txtContactDetailsCity;
+        private System.Windows.Forms.TextBox txtContactDetailsSuburb;
+        private System.Windows.Forms.TextBox txtContactDetailsAddress;
+        private System.Windows.Forms.Label lblContactDetailsEmail;
+        private System.Windows.Forms.Label lblContactDetailsFaxNumber;
+        private System.Windows.Forms.Label lblContactDetailsWorkTelephone;
+        private System.Windows.Forms.Label lblContactDetailsMobileTelephone;
+        private System.Windows.Forms.Label lblContactDetailsHomeTelephone;
+        private System.Windows.Forms.Label lblContactDetailsCity;
+        private System.Windows.Forms.Label lblContactDetailsSuburb;
+        private System.Windows.Forms.Label lblContactDetailsAddress;
         private System.Windows.Forms.LinkLabel linkContactDetailsCancel;
         private System.Windows.Forms.LinkLabel linkContactDetailsSae;
         private System.Windows.Forms.LinkLabel linkContactDetailsEdit;
-        private System.Windows.Forms.TextBox txtPostalCode;
-        private System.Windows.Forms.Label lblPostalCode;
+        private System.Windows.Forms.TextBox txtContactDetailsPostalCode;
+        private System.Windows.Forms.Label lbContactDetailslPostalCode;
+        private System.Windows.Forms.GroupBox groupEmergencyContactDetails;
+        private System.Windows.Forms.LinkLabel linkEmergencyContactDetailsCancel;
+        private System.Windows.Forms.LinkLabel linkEmergencyContactDetailsSave;
+        private System.Windows.Forms.LinkLabel linkEmergencyContactDetailsEdit;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsPostalCode;
+        private System.Windows.Forms.Label lblEmergencyDetailsPostalCode;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsEmail;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsFaxNumber;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsWorkTelephone;
+        private System.Windows.Forms.TextBox txtEmergencyDetailsMobileTelephone;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsHomeTelephone;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsCity;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsSuburb;
+        private System.Windows.Forms.TextBox txtEmergenctContactDetailsAddress;
+        private System.Windows.Forms.Label lblEmergencyContactDetailsEmail;
+        private System.Windows.Forms.Label lblEmergencyContactDetailsFaxNumber;
+        private System.Windows.Forms.Label lblEmergencyContactDetailsWorkTelephone;
+        private System.Windows.Forms.Label lblEmergencyContactDetailsMobileTelephone;
+        private System.Windows.Forms.Label lblEmergencyContactDetailsHomeTelephone;
+        private System.Windows.Forms.Label lblEmergencyContactDetailsCity;
+        private System.Windows.Forms.Label lblEmergencyContactDetailsSuburb;
+        private System.Windows.Forms.Label lblEmergencyContactDetailsAddress;
     }
 }
