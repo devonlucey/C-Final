@@ -68,11 +68,33 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblIdentityNumber = new System.Windows.Forms.Label();
             this.groupContactDetails = new System.Windows.Forms.GroupBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblSuburb = new System.Windows.Forms.Label();
+            this.lblCity = new System.Windows.Forms.Label();
+            this.lblHomeTelephone = new System.Windows.Forms.Label();
+            this.lblMobileTelephone = new System.Windows.Forms.Label();
+            this.lblWorkTelephone = new System.Windows.Forms.Label();
+            this.lblFaxNumber = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtSuburb = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.txHomeTelephone = new System.Windows.Forms.TextBox();
+            this.txtMobileTelephone = new System.Windows.Forms.TextBox();
+            this.txtWorkTelephone = new System.Windows.Forms.TextBox();
+            this.txtFaxNumber = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblPostalCode = new System.Windows.Forms.Label();
+            this.txtPostalCode = new System.Windows.Forms.TextBox();
+            this.linkContactDetailsCancel = new System.Windows.Forms.LinkLabel();
+            this.linkContactDetailsSae = new System.Windows.Forms.LinkLabel();
+            this.linkContactDetailsEdit = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picProfileImage)).BeginInit();
             this.groupLoginDetails.SuspendLayout();
             this.groupPassword.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupPersonalDetails.SuspendLayout();
+            this.groupContactDetails.SuspendLayout();
             this.SuspendLayout();
             // 
             // picProfileImage
@@ -454,12 +476,208 @@
             // 
             // groupContactDetails
             // 
+            this.groupContactDetails.Controls.Add(this.linkContactDetailsCancel);
+            this.groupContactDetails.Controls.Add(this.linkContactDetailsSae);
+            this.groupContactDetails.Controls.Add(this.linkContactDetailsEdit);
+            this.groupContactDetails.Controls.Add(this.txtPostalCode);
+            this.groupContactDetails.Controls.Add(this.lblPostalCode);
+            this.groupContactDetails.Controls.Add(this.txtEmail);
+            this.groupContactDetails.Controls.Add(this.txtFaxNumber);
+            this.groupContactDetails.Controls.Add(this.txtWorkTelephone);
+            this.groupContactDetails.Controls.Add(this.txtMobileTelephone);
+            this.groupContactDetails.Controls.Add(this.txHomeTelephone);
+            this.groupContactDetails.Controls.Add(this.txtCity);
+            this.groupContactDetails.Controls.Add(this.txtSuburb);
+            this.groupContactDetails.Controls.Add(this.txtAddress);
+            this.groupContactDetails.Controls.Add(this.lblEmail);
+            this.groupContactDetails.Controls.Add(this.lblFaxNumber);
+            this.groupContactDetails.Controls.Add(this.lblWorkTelephone);
+            this.groupContactDetails.Controls.Add(this.lblMobileTelephone);
+            this.groupContactDetails.Controls.Add(this.lblHomeTelephone);
+            this.groupContactDetails.Controls.Add(this.lblCity);
+            this.groupContactDetails.Controls.Add(this.lblSuburb);
+            this.groupContactDetails.Controls.Add(this.lblAddress);
             this.groupContactDetails.Location = new System.Drawing.Point(12, 506);
             this.groupContactDetails.Name = "groupContactDetails";
             this.groupContactDetails.Size = new System.Drawing.Size(458, 296);
             this.groupContactDetails.TabIndex = 5;
             this.groupContactDetails.TabStop = false;
             this.groupContactDetails.Text = "Contact Details";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(7, 30);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(45, 13);
+            this.lblAddress.TabIndex = 0;
+            this.lblAddress.Text = "Address";
+            // 
+            // lblSuburb
+            // 
+            this.lblSuburb.AutoSize = true;
+            this.lblSuburb.Location = new System.Drawing.Point(7, 82);
+            this.lblSuburb.Name = "lblSuburb";
+            this.lblSuburb.Size = new System.Drawing.Size(41, 13);
+            this.lblSuburb.TabIndex = 1;
+            this.lblSuburb.Text = "Suburb";
+            // 
+            // lblCity
+            // 
+            this.lblCity.AutoSize = true;
+            this.lblCity.Location = new System.Drawing.Point(7, 106);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(24, 13);
+            this.lblCity.TabIndex = 2;
+            this.lblCity.Text = "City";
+            // 
+            // lblHomeTelephone
+            // 
+            this.lblHomeTelephone.AutoSize = true;
+            this.lblHomeTelephone.Location = new System.Drawing.Point(5, 135);
+            this.lblHomeTelephone.Name = "lblHomeTelephone";
+            this.lblHomeTelephone.Size = new System.Drawing.Size(89, 13);
+            this.lblHomeTelephone.TabIndex = 3;
+            this.lblHomeTelephone.Text = "Home Telephone";
+            // 
+            // lblMobileTelephone
+            // 
+            this.lblMobileTelephone.AutoSize = true;
+            this.lblMobileTelephone.Location = new System.Drawing.Point(7, 166);
+            this.lblMobileTelephone.Name = "lblMobileTelephone";
+            this.lblMobileTelephone.Size = new System.Drawing.Size(89, 13);
+            this.lblMobileTelephone.TabIndex = 4;
+            this.lblMobileTelephone.Text = "MobileTelephone";
+            // 
+            // lblWorkTelephone
+            // 
+            this.lblWorkTelephone.AutoSize = true;
+            this.lblWorkTelephone.Location = new System.Drawing.Point(8, 200);
+            this.lblWorkTelephone.Name = "lblWorkTelephone";
+            this.lblWorkTelephone.Size = new System.Drawing.Size(87, 13);
+            this.lblWorkTelephone.TabIndex = 5;
+            this.lblWorkTelephone.Text = "Work Telephone";
+            // 
+            // lblFaxNumber
+            // 
+            this.lblFaxNumber.AutoSize = true;
+            this.lblFaxNumber.Location = new System.Drawing.Point(7, 229);
+            this.lblFaxNumber.Name = "lblFaxNumber";
+            this.lblFaxNumber.Size = new System.Drawing.Size(64, 13);
+            this.lblFaxNumber.TabIndex = 6;
+            this.lblFaxNumber.Text = "Fax Number";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(11, 260);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.TabIndex = 7;
+            this.lblEmail.Text = "Email";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(116, 30);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(186, 40);
+            this.txtAddress.TabIndex = 8;
+            // 
+            // txtSuburb
+            // 
+            this.txtSuburb.Location = new System.Drawing.Point(116, 82);
+            this.txtSuburb.Name = "txtSuburb";
+            this.txtSuburb.Size = new System.Drawing.Size(186, 20);
+            this.txtSuburb.TabIndex = 9;
+            // 
+            // txtCity
+            // 
+            this.txtCity.Location = new System.Drawing.Point(117, 106);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(186, 20);
+            this.txtCity.TabIndex = 10;
+            // 
+            // txHomeTelephone
+            // 
+            this.txHomeTelephone.Location = new System.Drawing.Point(116, 135);
+            this.txHomeTelephone.Name = "txHomeTelephone";
+            this.txHomeTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txHomeTelephone.TabIndex = 11;
+            // 
+            // txtMobileTelephone
+            // 
+            this.txtMobileTelephone.Location = new System.Drawing.Point(117, 166);
+            this.txtMobileTelephone.Name = "txtMobileTelephone";
+            this.txtMobileTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtMobileTelephone.TabIndex = 12;
+            // 
+            // txtWorkTelephone
+            // 
+            this.txtWorkTelephone.Location = new System.Drawing.Point(117, 200);
+            this.txtWorkTelephone.Name = "txtWorkTelephone";
+            this.txtWorkTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtWorkTelephone.TabIndex = 13;
+            // 
+            // txtFaxNumber
+            // 
+            this.txtFaxNumber.Location = new System.Drawing.Point(116, 229);
+            this.txtFaxNumber.Name = "txtFaxNumber";
+            this.txtFaxNumber.Size = new System.Drawing.Size(186, 20);
+            this.txtFaxNumber.TabIndex = 14;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(117, 260);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(186, 20);
+            this.txtEmail.TabIndex = 15;
+            // 
+            // lblPostalCode
+            // 
+            this.lblPostalCode.AutoSize = true;
+            this.lblPostalCode.Location = new System.Drawing.Point(324, 106);
+            this.lblPostalCode.Name = "lblPostalCode";
+            this.lblPostalCode.Size = new System.Drawing.Size(64, 13);
+            this.lblPostalCode.TabIndex = 16;
+            this.lblPostalCode.Text = "Postal Code";
+            // 
+            // txtPostalCode
+            // 
+            this.txtPostalCode.Location = new System.Drawing.Point(327, 135);
+            this.txtPostalCode.Name = "txtPostalCode";
+            this.txtPostalCode.Size = new System.Drawing.Size(100, 20);
+            this.txtPostalCode.TabIndex = 17;
+            // 
+            // linkContactDetailsCancel
+            // 
+            this.linkContactDetailsCancel.AutoSize = true;
+            this.linkContactDetailsCancel.Location = new System.Drawing.Point(387, 236);
+            this.linkContactDetailsCancel.Name = "linkContactDetailsCancel";
+            this.linkContactDetailsCancel.Size = new System.Drawing.Size(40, 13);
+            this.linkContactDetailsCancel.TabIndex = 20;
+            this.linkContactDetailsCancel.TabStop = true;
+            this.linkContactDetailsCancel.Text = "Cancel";
+            // 
+            // linkContactDetailsSae
+            // 
+            this.linkContactDetailsSae.AutoSize = true;
+            this.linkContactDetailsSae.Location = new System.Drawing.Point(349, 236);
+            this.linkContactDetailsSae.Name = "linkContactDetailsSae";
+            this.linkContactDetailsSae.Size = new System.Drawing.Size(32, 13);
+            this.linkContactDetailsSae.TabIndex = 19;
+            this.linkContactDetailsSae.TabStop = true;
+            this.linkContactDetailsSae.Text = "Save";
+            // 
+            // linkContactDetailsEdit
+            // 
+            this.linkContactDetailsEdit.AutoSize = true;
+            this.linkContactDetailsEdit.Location = new System.Drawing.Point(318, 236);
+            this.linkContactDetailsEdit.Name = "linkContactDetailsEdit";
+            this.linkContactDetailsEdit.Size = new System.Drawing.Size(25, 13);
+            this.linkContactDetailsEdit.TabIndex = 18;
+            this.linkContactDetailsEdit.TabStop = true;
+            this.linkContactDetailsEdit.Text = "Edit";
             // 
             // formPersonalHealthRecord
             // 
@@ -482,6 +700,8 @@
             this.toolStrip1.PerformLayout();
             this.groupPersonalDetails.ResumeLayout(false);
             this.groupPersonalDetails.PerformLayout();
+            this.groupContactDetails.ResumeLayout(false);
+            this.groupContactDetails.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,5 +748,26 @@
         private System.Windows.Forms.RadioButton radioMale;
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.GroupBox groupContactDetails;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtFaxNumber;
+        private System.Windows.Forms.TextBox txtWorkTelephone;
+        private System.Windows.Forms.TextBox txtMobileTelephone;
+        private System.Windows.Forms.TextBox txHomeTelephone;
+        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.TextBox txtSuburb;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblFaxNumber;
+        private System.Windows.Forms.Label lblWorkTelephone;
+        private System.Windows.Forms.Label lblMobileTelephone;
+        private System.Windows.Forms.Label lblHomeTelephone;
+        private System.Windows.Forms.Label lblCity;
+        private System.Windows.Forms.Label lblSuburb;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.LinkLabel linkContactDetailsCancel;
+        private System.Windows.Forms.LinkLabel linkContactDetailsSae;
+        private System.Windows.Forms.LinkLabel linkContactDetailsEdit;
+        private System.Windows.Forms.TextBox txtPostalCode;
+        private System.Windows.Forms.Label lblPostalCode;
     }
 }
