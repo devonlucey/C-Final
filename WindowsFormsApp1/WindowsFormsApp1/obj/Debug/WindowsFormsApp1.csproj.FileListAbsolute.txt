@@ -31,3 +31,5 @@ C:\Users\Devon\Documents\GitHub\C-Final\WindowsFormsApp1\WindowsFormsApp1\obj\De
 C:\Users\Devon\Documents\GitHub\C-Final\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Devon\Documents\GitHub\C-Final\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
 C:\Users\Devon\Documents\GitHub\C-Final\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.formPersonalHealthRecord.resources
+C:\Users\Devon\Documents\GitHub\C-Final\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pchr42563.mdf
+C:\Users\Devon\Documents\GitHub\C-Final\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pchr42563_log.ldf

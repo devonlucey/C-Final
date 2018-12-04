@@ -36,5 +36,12 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void formPersonalHealthRecord_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'pchr42563DataSet.PATIENT_TBL' table. You can move, or remove it, as needed.
+            // this.pATIENT_TBLTableAdapter.Fill(this.pchr42563DataSet.PATIENT_TBL);
+
+        }
     }
 }
