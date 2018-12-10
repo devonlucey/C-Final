@@ -16,6 +16,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        // Disable Login on start until requirements have been met.
+        private void formLogin_Load(object sender, EventArgs e)
+        {
+            btnLogin.Enabled = false;
+        }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
@@ -37,23 +42,25 @@ namespace WindowsFormsApp1
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
+        // Open the Registration form and hide the login form.
         private void btnRegister_Click(object sender, EventArgs e)
         {
-
+            Form form2 = new formRegisteration();
+            //this.Hide();
+            form2.Show();
+            form2.Focus();
         }
 
+        // Open the Personal Health Record form and hide the login form.
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void formLogin_Load(object sender, EventArgs e)
-        {
-
-                btnLogin.Enabled = false;
+            Form form3 = new formPersonalHealthRecord();
+            //this.Hide();
+            form3.Show();
+            form3.Focus();
         }
     }
 }
