@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="pchr42563ModelStoreContainer" CdmEntityContainer="pchr42563Entities">
+    <EntitySetMapping Name="ALLERGY_TBL">
+      <EntityTypeMapping TypeName="pchr42563Model.ALLERGY_TBL">
+        <MappingFragment StoreEntitySet="ALLERGY_TBL">
+          <ScalarProperty Name="PATIENT_ID" ColumnName="PATIENT_ID" />
+          <ScalarProperty Name="ALLERGY_ID" ColumnName="ALLERGY_ID" />
+          <ScalarProperty Name="ALLERGEN" ColumnName="ALLERGEN" />
+          <ScalarProperty Name="ONSET_DATE" ColumnName="ONSET_DATE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONDITIONs">
+      <EntityTypeMapping TypeName="pchr42563Model.CONDITION">
+        <MappingFragment StoreEntitySet="CONDITION">
+          <ScalarProperty Name="PATIENT_ID" ColumnName="PATIENT_ID" />
+          <ScalarProperty Name="CONDITION_ID" ColumnName="CONDITION_ID" />
+          <ScalarProperty Name="CONDITION1" ColumnName="CONDITION" />
+          <ScalarProperty Name="ONSET_DATE" ColumnName="ONSET_DATE" />
+          <ScalarProperty Name="ACUTE" ColumnName="ACUTE" />
+          <ScalarProperty Name="CHRONIC" ColumnName="CHRONIC" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IMMUNIZATION_TBL">
+      <EntityTypeMapping TypeName="pchr42563Model.IMMUNIZATION_TBL">
+        <MappingFragment StoreEntitySet="IMMUNIZATION_TBL">
+          <ScalarProperty Name="PATIENT_ID" ColumnName="PATIENT_ID" />
+          <ScalarProperty Name="IMMUNIZATION_ID" ColumnName="IMMUNIZATION_ID" />
+          <ScalarProperty Name="IMMUNIZATION" ColumnName="IMMUNIZATION" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MED_PROC_TBL">
+      <EntityTypeMapping TypeName="pchr42563Model.MED_PROC_TBL">
+        <MappingFragment StoreEntitySet="MED_PROC_TBL">
+          <ScalarProperty Name="PATIENT_ID" ColumnName="PATIENT_ID" />
+          <ScalarProperty Name="PROCEDURE_ID" ColumnName="PROCEDURE_ID" />
+          <ScalarProperty Name="MED_PROCEDURE" ColumnName="MED_PROCEDURE" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="DOCTOR" ColumnName="DOCTOR" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MEDICATION_TBL">
+      <EntityTypeMapping TypeName="pchr42563Model.MEDICATION_TBL">
+        <MappingFragment StoreEntitySet="MEDICATION_TBL">
+          <ScalarProperty Name="PATIENT_ID" ColumnName="PATIENT_ID" />
+          <ScalarProperty Name="MED_ID" ColumnName="MED_ID" />
+          <ScalarProperty Name="MEDICATION" ColumnName="MEDICATION" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="CHRONIC" ColumnName="CHRONIC" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PATIENT_TBL">
+      <EntityTypeMapping TypeName="pchr42563Model.PATIENT_TBL">
+        <MappingFragment StoreEntitySet="PATIENT_TBL">
+          <ScalarProperty Name="PATIENT_ID" ColumnName="PATIENT_ID" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="DATE_Of_BIRTH" ColumnName="DATE_Of_BIRTH" />
+          <ScalarProperty Name="ADDRESS_STREET" ColumnName="ADDRESS_STREET" />
+          <ScalarProperty Name="ADDRESS_CITY" ColumnName="ADDRESS_CITY" />
+          <ScalarProperty Name="ADDRESS_STATE" ColumnName="ADDRESS_STATE" />
+          <ScalarProperty Name="ADDRESS_ZIP" ColumnName="ADDRESS_ZIP" />
+          <ScalarProperty Name="PHONE_HOME" ColumnName="PHONE_HOME" />
+          <ScalarProperty Name="PHONE_MOBILE" ColumnName="PHONE_MOBILE" />
+          <ScalarProperty Name="PRIMARY_ID" ColumnName="PRIMARY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PER_DETAILS_TBL">
+      <EntityTypeMapping TypeName="pchr42563Model.PER_DETAILS_TBL">
+        <MappingFragment StoreEntitySet="PER_DETAILS_TBL">
+          <ScalarProperty Name="PATIENT_ID" ColumnName="PATIENT_ID" />
+          <ScalarProperty Name="BLOOD_TYPE" ColumnName="BLOOD_TYPE" />
+          <ScalarProperty Name="ORGAN_DONOR" ColumnName="ORGAN_DONOR" />
+          <ScalarProperty Name="HIV_STATUS" ColumnName="HIV_STATUS" />
+          <ScalarProperty Name="HEIGHT_INCHES" ColumnName="HEIGHT_INCHES" />
+          <ScalarProperty Name="WEIGHT_LBS" ColumnName="WEIGHT_LBS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRIMARY_CARE_TBL">
+      <EntityTypeMapping TypeName="pchr42563Model.PRIMARY_CARE_TBL">
+        <MappingFragment StoreEntitySet="PRIMARY_CARE_TBL">
+          <ScalarProperty Name="PRIMARY_ID" ColumnName="PRIMARY_ID" />
+          <ScalarProperty Name="NAME_LAST" ColumnName="NAME_LAST" />
+          <ScalarProperty Name="NAME_FISRT" ColumnName="NAME_FISRT" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="SPECIALTY" ColumnName="SPECIALTY" />
+          <ScalarProperty Name="PHONE_OFFICE" ColumnName="PHONE_OFFICE" />
+          <ScalarProperty Name="PHONE_MOBILE" ColumnName="PHONE_MOBILE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEST_TBL">
+      <EntityTypeMapping TypeName="pchr42563Model.TEST_TBL">
+        <MappingFragment StoreEntitySet="TEST_TBL">
+          <ScalarProperty Name="PATIENT_ID" ColumnName="PATIENT_ID" />
+          <ScalarProperty Name="TEST_ID" ColumnName="TEST_ID" />
+          <ScalarProperty Name="TEST" ColumnName="TEST" />
+          <ScalarProperty Name="RESULT" ColumnName="RESULT" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
