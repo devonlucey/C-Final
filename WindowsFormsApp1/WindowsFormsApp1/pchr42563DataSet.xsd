@@ -114,7 +114,16 @@ SELECT PATIENT_ID, LAST_NAME, FIRST_NAME, DATE_Of_BIRTH, ADDRESS_STREET, ADDRESS
               <Mapping SourceColumn="PHONE_MOBILE" DataSetColumn="PHONE_MOBILE" />
               <Mapping SourceColumn="PRIMARY_ID" DataSetColumn="PRIMARY_ID" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="pchr42563ConnectionString (Settings)" DbObjectName="dbo.PATIENT_TBL" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillID" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PATIENT_ID, LAST_NAME, FIRST_NAME, DATE_Of_BIRTH, ADDRESS_STREET, ADDRESS_CITY, ADDRESS_STATE, ADDRESS_ZIP, PHONE_HOME, PHONE_MOBILE, PRIMARY_ID FROM dbo.PATIENT_TBL</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PRIMARY_CARE_TBLTableAdapter" GeneratorDataComponentClassName="PRIMARY_CARE_TBLTableAdapter" Name="PRIMARY_CARE_TBL" UserDataComponentName="PRIMARY_CARE_TBLTableAdapter">
             <MainSource>
@@ -209,7 +218,7 @@ SELECT PRIMARY_ID, NAME_LAST, NAME_FISRT, TITLE, SPECIALTY, PHONE_OFFICE, PHONE_
   <xs:element name="pchr42563DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="pchr42563DataSet" msprop:Generator_UserDSName="pchr42563DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="PATIENT_TBL" msprop:Generator_TableClassName="PATIENT_TBLDataTable" msprop:Generator_TableVarName="tablePATIENT_TBL" msprop:Generator_TablePropName="PATIENT_TBL" msprop:Generator_RowDeletingName="PATIENT_TBLRowDeleting" msprop:Generator_RowChangingName="PATIENT_TBLRowChanging" msprop:Generator_RowEvHandlerName="PATIENT_TBLRowChangeEventHandler" msprop:Generator_RowDeletedName="PATIENT_TBLRowDeleted" msprop:Generator_UserTableName="PATIENT_TBL" msprop:Generator_RowChangedName="PATIENT_TBLRowChanged" msprop:Generator_RowEvArgName="PATIENT_TBLRowChangeEvent" msprop:Generator_RowClassName="PATIENT_TBLRow">
+        <xs:element name="PATIENT_TBL" msprop:Generator_TableClassName="PATIENT_TBLDataTable" msprop:Generator_TableVarName="tablePATIENT_TBL" msprop:Generator_RowChangedName="PATIENT_TBLRowChanged" msprop:Generator_TablePropName="PATIENT_TBL" msprop:Generator_RowDeletingName="PATIENT_TBLRowDeleting" msprop:Generator_RowChangingName="PATIENT_TBLRowChanging" msprop:Generator_RowEvHandlerName="PATIENT_TBLRowChangeEventHandler" msprop:Generator_RowDeletedName="PATIENT_TBLRowDeleted" msprop:Generator_RowClassName="PATIENT_TBLRow" msprop:Generator_UserTableName="PATIENT_TBL" msprop:Generator_RowEvArgName="PATIENT_TBLRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PATIENT_ID" msprop:Generator_ColumnVarNameInTable="columnPATIENT_ID" msprop:Generator_ColumnPropNameInRow="PATIENT_ID" msprop:Generator_ColumnPropNameInTable="PATIENT_IDColumn" msprop:Generator_UserColumnName="PATIENT_ID">
@@ -286,7 +295,7 @@ SELECT PRIMARY_ID, NAME_LAST, NAME_FISRT, TITLE, SPECIALTY, PHONE_OFFICE, PHONE_
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PRIMARY_CARE_TBL" msprop:Generator_TableClassName="PRIMARY_CARE_TBLDataTable" msprop:Generator_TableVarName="tablePRIMARY_CARE_TBL" msprop:Generator_TablePropName="PRIMARY_CARE_TBL" msprop:Generator_RowDeletingName="PRIMARY_CARE_TBLRowDeleting" msprop:Generator_RowChangingName="PRIMARY_CARE_TBLRowChanging" msprop:Generator_RowEvHandlerName="PRIMARY_CARE_TBLRowChangeEventHandler" msprop:Generator_RowDeletedName="PRIMARY_CARE_TBLRowDeleted" msprop:Generator_UserTableName="PRIMARY_CARE_TBL" msprop:Generator_RowChangedName="PRIMARY_CARE_TBLRowChanged" msprop:Generator_RowEvArgName="PRIMARY_CARE_TBLRowChangeEvent" msprop:Generator_RowClassName="PRIMARY_CARE_TBLRow">
+        <xs:element name="PRIMARY_CARE_TBL" msprop:Generator_TableClassName="PRIMARY_CARE_TBLDataTable" msprop:Generator_TableVarName="tablePRIMARY_CARE_TBL" msprop:Generator_RowChangedName="PRIMARY_CARE_TBLRowChanged" msprop:Generator_TablePropName="PRIMARY_CARE_TBL" msprop:Generator_RowDeletingName="PRIMARY_CARE_TBLRowDeleting" msprop:Generator_RowChangingName="PRIMARY_CARE_TBLRowChanging" msprop:Generator_RowEvHandlerName="PRIMARY_CARE_TBLRowChangeEventHandler" msprop:Generator_RowDeletedName="PRIMARY_CARE_TBLRowDeleted" msprop:Generator_RowClassName="PRIMARY_CARE_TBLRow" msprop:Generator_UserTableName="PRIMARY_CARE_TBL" msprop:Generator_RowEvArgName="PRIMARY_CARE_TBLRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PRIMARY_ID" msprop:Generator_ColumnVarNameInTable="columnPRIMARY_ID" msprop:Generator_ColumnPropNameInRow="PRIMARY_ID" msprop:Generator_ColumnPropNameInTable="PRIMARY_IDColumn" msprop:Generator_UserColumnName="PRIMARY_ID">

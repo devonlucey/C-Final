@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupLoginDetails = new System.Windows.Forms.GroupBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -54,8 +55,16 @@
             this.lblIdNumber = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.pchr42563DataSet = new WindowsFormsApp1.pchr42563DataSet();
+            this.pATIENTTBLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pATIENT_TBLTableAdapter = new WindowsFormsApp1.pchr42563DataSetTableAdapters.PATIENT_TBLTableAdapter();
+            this.fillIDToolStrip = new System.Windows.Forms.ToolStrip();
+            this.fillIDToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.groupLoginDetails.SuspendLayout();
             this.groupPersonalDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pchr42563DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pATIENTTBLBindingSource)).BeginInit();
+            this.fillIDToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -78,9 +87,9 @@
             this.groupLoginDetails.Controls.Add(this.lblPasssword);
             this.groupLoginDetails.Controls.Add(this.lblUsername);
             this.groupLoginDetails.Location = new System.Drawing.Point(24, 68);
-            this.groupLoginDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupLoginDetails.Margin = new System.Windows.Forms.Padding(2);
             this.groupLoginDetails.Name = "groupLoginDetails";
-            this.groupLoginDetails.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupLoginDetails.Padding = new System.Windows.Forms.Padding(2);
             this.groupLoginDetails.Size = new System.Drawing.Size(433, 154);
             this.groupLoginDetails.TabIndex = 1;
             this.groupLoginDetails.TabStop = false;
@@ -88,8 +97,9 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENTTBLBindingSource, "PHONE_HOME", true));
             this.txtUsername.Location = new System.Drawing.Point(216, 22);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(152, 20);
             this.txtUsername.TabIndex = 2;
@@ -98,7 +108,7 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(216, 66);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(152, 20);
             this.txtPassword.TabIndex = 3;
@@ -107,7 +117,7 @@
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.Location = new System.Drawing.Point(216, 107);
-            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(152, 20);
             this.txtConfirmPassword.TabIndex = 4;
@@ -161,9 +171,9 @@
             this.groupPersonalDetails.Controls.Add(this.lblTitle);
             this.groupPersonalDetails.Controls.Add(this.lblIdNumber);
             this.groupPersonalDetails.Location = new System.Drawing.Point(24, 294);
-            this.groupPersonalDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupPersonalDetails.Margin = new System.Windows.Forms.Padding(2);
             this.groupPersonalDetails.Name = "groupPersonalDetails";
-            this.groupPersonalDetails.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupPersonalDetails.Padding = new System.Windows.Forms.Padding(2);
             this.groupPersonalDetails.Size = new System.Drawing.Size(432, 269);
             this.groupPersonalDetails.TabIndex = 2;
             this.groupPersonalDetails.TabStop = false;
@@ -172,7 +182,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Location = new System.Drawing.Point(216, 152);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(182, 20);
             this.txtFirstName.TabIndex = 14;
@@ -181,7 +191,7 @@
             // txtLastName
             // 
             this.txtLastName.Location = new System.Drawing.Point(216, 113);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(182, 20);
             this.txtLastName.TabIndex = 13;
@@ -190,7 +200,7 @@
             // txtInitial
             // 
             this.txtInitial.Location = new System.Drawing.Point(287, 73);
-            this.txtInitial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtInitial.Margin = new System.Windows.Forms.Padding(2);
             this.txtInitial.Name = "txtInitial";
             this.txtInitial.Size = new System.Drawing.Size(112, 20);
             this.txtInitial.TabIndex = 12;
@@ -204,7 +214,7 @@
             "Mrs.",
             "Dr."});
             this.listTitle.Location = new System.Drawing.Point(104, 73);
-            this.listTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listTitle.Margin = new System.Windows.Forms.Padding(2);
             this.listTitle.Name = "listTitle";
             this.listTitle.Size = new System.Drawing.Size(62, 17);
             this.listTitle.TabIndex = 11;
@@ -212,7 +222,7 @@
             // dateDob
             // 
             this.dateDob.Location = new System.Drawing.Point(127, 189);
-            this.dateDob.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateDob.Margin = new System.Windows.Forms.Padding(2);
             this.dateDob.Name = "dateDob";
             this.dateDob.Size = new System.Drawing.Size(102, 20);
             this.dateDob.TabIndex = 10;
@@ -222,7 +232,7 @@
             // 
             this.radioFemale.AutoSize = true;
             this.radioFemale.Location = new System.Drawing.Point(246, 229);
-            this.radioFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioFemale.Margin = new System.Windows.Forms.Padding(2);
             this.radioFemale.Name = "radioFemale";
             this.radioFemale.Size = new System.Drawing.Size(59, 17);
             this.radioFemale.TabIndex = 9;
@@ -235,7 +245,7 @@
             // 
             this.radioMale.AutoSize = true;
             this.radioMale.Location = new System.Drawing.Point(127, 229);
-            this.radioMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioMale.Margin = new System.Windows.Forms.Padding(2);
             this.radioMale.Name = "radioMale";
             this.radioMale.Size = new System.Drawing.Size(48, 17);
             this.radioMale.TabIndex = 8;
@@ -246,8 +256,9 @@
             // 
             // txtIdNumber
             // 
+            this.txtIdNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENTTBLBindingSource, "PATIENT_ID", true));
             this.txtIdNumber.Location = new System.Drawing.Point(246, 34);
-            this.txtIdNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdNumber.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdNumber.Name = "txtIdNumber";
             this.txtIdNumber.Size = new System.Drawing.Size(152, 20);
             this.txtIdNumber.TabIndex = 7;
@@ -343,23 +354,61 @@
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // pchr42563DataSet
+            // 
+            this.pchr42563DataSet.DataSetName = "pchr42563DataSet";
+            this.pchr42563DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pATIENTTBLBindingSource
+            // 
+            this.pATIENTTBLBindingSource.DataMember = "PATIENT_TBL";
+            this.pATIENTTBLBindingSource.DataSource = this.pchr42563DataSet;
+            // 
+            // pATIENT_TBLTableAdapter
+            // 
+            this.pATIENT_TBLTableAdapter.ClearBeforeFill = true;
+            // 
+            // fillIDToolStrip
+            // 
+            this.fillIDToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillIDToolStripButton});
+            this.fillIDToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillIDToolStrip.Name = "fillIDToolStrip";
+            this.fillIDToolStrip.Size = new System.Drawing.Size(111, 25);
+            this.fillIDToolStrip.TabIndex = 5;
+            this.fillIDToolStrip.Text = "fillIDToolStrip";
+            // 
+            // fillIDToolStripButton
+            // 
+            this.fillIDToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillIDToolStripButton.Name = "fillIDToolStripButton";
+            this.fillIDToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.fillIDToolStripButton.Text = "FillID";
+            this.fillIDToolStripButton.Click += new System.EventHandler(this.fillIDToolStripButton_Click);
+            // 
             // formRegisteration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 633);
+            this.Controls.Add(this.fillIDToolStrip);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.groupPersonalDetails);
             this.Controls.Add(this.groupLoginDetails);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "formRegisteration";
             this.Text = "Registration";
+            this.Load += new System.EventHandler(this.formRegisteration_Load);
             this.groupLoginDetails.ResumeLayout(false);
             this.groupLoginDetails.PerformLayout();
             this.groupPersonalDetails.ResumeLayout(false);
             this.groupPersonalDetails.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pchr42563DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pATIENTTBLBindingSource)).EndInit();
+            this.fillIDToolStrip.ResumeLayout(false);
+            this.fillIDToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,5 +442,10 @@
         private System.Windows.Forms.Label lblIdNumber;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnRegister;
+        private pchr42563DataSet pchr42563DataSet;
+        private System.Windows.Forms.BindingSource pATIENTTBLBindingSource;
+        private pchr42563DataSetTableAdapters.PATIENT_TBLTableAdapter pATIENT_TBLTableAdapter;
+        private System.Windows.Forms.ToolStrip fillIDToolStrip;
+        private System.Windows.Forms.ToolStripButton fillIDToolStripButton;
     }
 }

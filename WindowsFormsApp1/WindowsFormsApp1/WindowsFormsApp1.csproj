@@ -63,6 +63,9 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="pchr42563DataSet.cs">
+      <DependentUpon>pchr42563DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="pchr42563DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
