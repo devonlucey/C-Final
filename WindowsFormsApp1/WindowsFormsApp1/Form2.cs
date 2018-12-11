@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
 
         private void txtIdNumber_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void radioFemale_CheckedChanged(object sender, EventArgs e)
@@ -75,6 +75,26 @@ namespace WindowsFormsApp1
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void formRegisteration_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'pchr42563DataSet.PATIENT_TBL' table. You can move, or remove it, as needed.
+            this.pATIENT_TBLTableAdapter.Fill(this.pchr42563DataSet.PATIENT_TBL);
+
+        }
+
+        private void fillIDToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.pATIENT_TBLTableAdapter.FillID(this.pchr42563DataSet.PATIENT_TBL);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }

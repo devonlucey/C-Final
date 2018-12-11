@@ -30,13 +30,13 @@ namespace WindowsFormsApp1
         // validation allows password that allows login only if password textbox is not empty
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-            if (txtPassword.Text==string.Empty)
+            if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
             {
-                btnLogin.Enabled = false;
+                btnLogin.Enabled = true;
             }
             else
             {
-                btnLogin.Enabled = true;
+                btnLogin.Enabled = false;
             }
         }
 
@@ -46,6 +46,7 @@ namespace WindowsFormsApp1
         }
 
         // Open the Registration form and hide the login form.
+        //Removed .hide due to not ending the program entirely causing issues reruning tests.
         private void btnRegister_Click(object sender, EventArgs e)
         {
             Form form2 = new formRegisteration();

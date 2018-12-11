@@ -57,11 +57,14 @@
             this.radioMale = new System.Windows.Forms.RadioButton();
             this.lblGender = new System.Windows.Forms.Label();
             this.dateDateOfBirth = new System.Windows.Forms.DateTimePicker();
+            this.pATIENT_TBLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pchr42563DataSet = new WindowsFormsApp1.pchr42563DataSet();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtInitials = new System.Windows.Forms.TextBox();
             this.lblInitials = new System.Windows.Forms.Label();
             this.listTitle = new System.Windows.Forms.ListBox();
+            this.pRIMARYCARETBLBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtIdentityNumber = new System.Windows.Forms.TextBox();
             this.lblDateOfBirth = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
@@ -69,28 +72,32 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblIdentityNumber = new System.Windows.Forms.Label();
             this.groupContactDetails = new System.Windows.Forms.GroupBox();
-            this.lblContactDetailsAddress = new System.Windows.Forms.Label();
-            this.lblContactDetailsSuburb = new System.Windows.Forms.Label();
-            this.lblContactDetailsCity = new System.Windows.Forms.Label();
-            this.lblContactDetailsHomeTelephone = new System.Windows.Forms.Label();
-            this.lblContactDetailsMobileTelephone = new System.Windows.Forms.Label();
-            this.lblContactDetailsWorkTelephone = new System.Windows.Forms.Label();
-            this.lblContactDetailsFaxNumber = new System.Windows.Forms.Label();
-            this.lblContactDetailsEmail = new System.Windows.Forms.Label();
-            this.txtContactDetailsAddress = new System.Windows.Forms.TextBox();
-            this.txtContactDetailsSuburb = new System.Windows.Forms.TextBox();
-            this.txtContactDetailsCity = new System.Windows.Forms.TextBox();
-            this.txContactDetailsHomeTelephone = new System.Windows.Forms.TextBox();
-            this.txtContactDetailsMobileTelephone = new System.Windows.Forms.TextBox();
-            this.txtContactDetailsWorkTelephone = new System.Windows.Forms.TextBox();
-            this.txtContactDetailsFaxNumber = new System.Windows.Forms.TextBox();
-            this.txtContactDetailsEmail = new System.Windows.Forms.TextBox();
-            this.lbContactDetailslPostalCode = new System.Windows.Forms.Label();
-            this.txtContactDetailsPostalCode = new System.Windows.Forms.TextBox();
             this.linkContactDetailsCancel = new System.Windows.Forms.LinkLabel();
             this.linkContactDetailsSae = new System.Windows.Forms.LinkLabel();
             this.linkContactDetailsEdit = new System.Windows.Forms.LinkLabel();
+            this.txtContactDetailsPostalCode = new System.Windows.Forms.TextBox();
+            this.lbContactDetailslPostalCode = new System.Windows.Forms.Label();
+            this.txtContactDetailsEmail = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsFaxNumber = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsWorkTelephone = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsMobileTelephone = new System.Windows.Forms.TextBox();
+            this.txContactDetailsHomeTelephone = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsCity = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsSuburb = new System.Windows.Forms.TextBox();
+            this.txtContactDetailsAddress = new System.Windows.Forms.TextBox();
+            this.lblContactDetailsEmail = new System.Windows.Forms.Label();
+            this.lblContactDetailsFaxNumber = new System.Windows.Forms.Label();
+            this.lblContactDetailsWorkTelephone = new System.Windows.Forms.Label();
+            this.lblContactDetailsMobileTelephone = new System.Windows.Forms.Label();
+            this.lblContactDetailsHomeTelephone = new System.Windows.Forms.Label();
+            this.lblContactDetailsCity = new System.Windows.Forms.Label();
+            this.lblContactDetailsSuburb = new System.Windows.Forms.Label();
+            this.lblContactDetailsAddress = new System.Windows.Forms.Label();
             this.groupEmergencyContactDetails = new System.Windows.Forms.GroupBox();
+            this.txtRelationship = new System.Windows.Forms.TextBox();
+            this.txtNextOfKin = new System.Windows.Forms.TextBox();
+            this.lblRelationship = new System.Windows.Forms.Label();
+            this.lblNextOfKin = new System.Windows.Forms.Label();
             this.linkEmergencyContactDetailsCancel = new System.Windows.Forms.LinkLabel();
             this.linkEmergencyContactDetailsSave = new System.Windows.Forms.LinkLabel();
             this.linkEmergencyContactDetailsEdit = new System.Windows.Forms.LinkLabel();
@@ -99,11 +106,11 @@
             this.txtEmergencyContactDetailsEmail = new System.Windows.Forms.TextBox();
             this.txtEmergencyContactDetailsFaxNumber = new System.Windows.Forms.TextBox();
             this.txtEmergencyContactDetailsWorkTelephone = new System.Windows.Forms.TextBox();
-            this.txtEmergencyDetailsMobileTelephone = new System.Windows.Forms.TextBox();
+            this.txtEmergencyContactDetailsMobileTelephone = new System.Windows.Forms.TextBox();
             this.txtEmergencyContactDetailsHomeTelephone = new System.Windows.Forms.TextBox();
             this.txtEmergencyContactDetailsCity = new System.Windows.Forms.TextBox();
             this.txtEmergencyContactDetailsSuburb = new System.Windows.Forms.TextBox();
-            this.txtEmergenctContactDetailsAddress = new System.Windows.Forms.TextBox();
+            this.txtEmergencyContactDetailsAddress = new System.Windows.Forms.TextBox();
             this.lblEmergencyContactDetailsEmail = new System.Windows.Forms.Label();
             this.lblEmergencyContactDetailsFaxNumber = new System.Windows.Forms.Label();
             this.lblEmergencyContactDetailsWorkTelephone = new System.Windows.Forms.Label();
@@ -112,48 +119,47 @@
             this.lblEmergencyContactDetailsCity = new System.Windows.Forms.Label();
             this.lblEmergencyContactDetailsSuburb = new System.Windows.Forms.Label();
             this.lblEmergencyContactDetailsAddress = new System.Windows.Forms.Label();
-            this.lblNextOfKin = new System.Windows.Forms.Label();
-            this.lblRelationship = new System.Windows.Forms.Label();
-            this.txtRelationship = new System.Windows.Forms.TextBox();
-            this.txtNextOfKin = new System.Windows.Forms.TextBox();
             this.groupPrimeartCareProviderDetails = new System.Windows.Forms.GroupBox();
-            this.lblPrimaryCareProviderDetailsFullName = new System.Windows.Forms.Label();
-            this.lblPrimaryCareProviderDetailsSpecialty = new System.Windows.Forms.Label();
-            this.lblPrimaryCareProviderDetailsMobileTelephone = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
-            this.lblPrimaryCareProviderDetailsFaxNumber = new System.Windows.Forms.Label();
-            this.lblPrimaryCareProviderDetailsEmail = new System.Windows.Forms.Label();
-            this.txtPrimaryCareProviderDetailsFullName = new System.Windows.Forms.TextBox();
-            this.txtPrimaryCareProviderDetailsSpecialty = new System.Windows.Forms.TextBox();
-            this.txtPrimaryCareProviderDetailsMobileTelephone = new System.Windows.Forms.TextBox();
-            this.txtPrimaryCareProviderDetailsWorkTelephone = new System.Windows.Forms.TextBox();
-            this.txtPrimaryCareProviderDetailsFaxNumber = new System.Windows.Forms.TextBox();
-            this.txtPrimaryCareProviderDetailsEmail = new System.Windows.Forms.TextBox();
             this.linkPrimaryCareProviderDetailsCancel = new System.Windows.Forms.LinkLabel();
             this.linkPrimaryCareProviderDetailsSave = new System.Windows.Forms.LinkLabel();
             this.linkPrimaryCareProviderDetailsEdit = new System.Windows.Forms.LinkLabel();
+            this.txtPrimaryCareProviderDetailsEmail = new System.Windows.Forms.TextBox();
+            this.txtPrimaryCareProviderDetailsFaxNumber = new System.Windows.Forms.TextBox();
+            this.txtPrimaryCareProviderDetailsWorkTelephone = new System.Windows.Forms.TextBox();
+            this.txtPrimaryCareProviderDetailsMobileTelephone = new System.Windows.Forms.TextBox();
+            this.txtPrimaryCareProviderDetailsSpecialty = new System.Windows.Forms.TextBox();
+            this.txtPrimaryCareProviderDetailsFullName = new System.Windows.Forms.TextBox();
+            this.lblPrimaryCareProviderDetailsEmail = new System.Windows.Forms.Label();
+            this.lblPrimaryCareProviderDetailsFaxNumber = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblPrimaryCareProviderDetailsMobileTelephone = new System.Windows.Forms.Label();
+            this.lblPrimaryCareProviderDetailsSpecialty = new System.Windows.Forms.Label();
+            this.lblPrimaryCareProviderDetailsFullName = new System.Windows.Forms.Label();
             this.groupHealthInsuranceDetails = new System.Windows.Forms.GroupBox();
-            this.lblHealthInsuranceDetailsInsurer = new System.Windows.Forms.Label();
-            this.lblHealthInsuranceDetailsInsurancePlan = new System.Windows.Forms.Label();
-            this.lblHealthInsuranceDetailsInsuranceNumber = new System.Windows.Forms.Label();
-            this.txtHealthInsuranceDetailsInsuranceNumber = new System.Windows.Forms.TextBox();
-            this.txtHealthInsuranceDetailsInsurer = new System.Windows.Forms.TextBox();
             this.txtHealthInsuranceDetailsInsurancePlan = new System.Windows.Forms.TextBox();
-            this.pchr42563DataSet = new WindowsFormsApp1.pchr42563DataSet();
-            this.pATIENT_TBLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtHealthInsuranceDetailsInsurer = new System.Windows.Forms.TextBox();
+            this.txtHealthInsuranceDetailsInsuranceNumber = new System.Windows.Forms.TextBox();
+            this.lblHealthInsuranceDetailsInsuranceNumber = new System.Windows.Forms.Label();
+            this.lblHealthInsuranceDetailsInsurancePlan = new System.Windows.Forms.Label();
+            this.lblHealthInsuranceDetailsInsurer = new System.Windows.Forms.Label();
             this.pATIENT_TBLTableAdapter = new WindowsFormsApp1.pchr42563DataSetTableAdapters.PATIENT_TBLTableAdapter();
             this.tableAdapterManager = new WindowsFormsApp1.pchr42563DataSetTableAdapters.TableAdapterManager();
+            this.pRIMARY_CARE_TBLTableAdapter = new WindowsFormsApp1.pchr42563DataSetTableAdapters.PRIMARY_CARE_TBLTableAdapter();
+            this.linkInsuranceCancel = new System.Windows.Forms.LinkLabel();
+            this.linkInsuranceSave = new System.Windows.Forms.LinkLabel();
+            this.linkInsuranceEdit = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picProfileImage)).BeginInit();
             this.groupLoginDetails.SuspendLayout();
             this.groupPassword.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupPersonalDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pATIENT_TBLBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pchr42563DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRIMARYCARETBLBindingSource)).BeginInit();
             this.groupContactDetails.SuspendLayout();
             this.groupEmergencyContactDetails.SuspendLayout();
             this.groupPrimeartCareProviderDetails.SuspendLayout();
             this.groupHealthInsuranceDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pchr42563DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pATIENT_TBLBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // picProfileImage
@@ -202,6 +208,7 @@
             this.linkCancel.TabIndex = 7;
             this.linkCancel.TabStop = true;
             this.linkCancel.Text = "Cancel";
+            this.linkCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCancel_LinkClicked);
             // 
             // linkChangePassword
             // 
@@ -212,6 +219,7 @@
             this.linkChangePassword.TabIndex = 6;
             this.linkChangePassword.TabStop = true;
             this.linkChangePassword.Text = "Change Password";
+            this.linkChangePassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkChangePassword_LinkClicked);
             // 
             // txtOldPassword
             // 
@@ -369,22 +377,26 @@
             // linkPersonalCancel
             // 
             this.linkPersonalCancel.AutoSize = true;
+            this.linkPersonalCancel.Enabled = false;
             this.linkPersonalCancel.Location = new System.Drawing.Point(376, 192);
             this.linkPersonalCancel.Name = "linkPersonalCancel";
             this.linkPersonalCancel.Size = new System.Drawing.Size(40, 13);
             this.linkPersonalCancel.TabIndex = 17;
             this.linkPersonalCancel.TabStop = true;
             this.linkPersonalCancel.Text = "Cancel";
+            this.linkPersonalCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPersonalCancel_LinkClicked);
             // 
             // linkPersonalSave
             // 
             this.linkPersonalSave.AutoSize = true;
+            this.linkPersonalSave.Enabled = false;
             this.linkPersonalSave.Location = new System.Drawing.Point(338, 192);
             this.linkPersonalSave.Name = "linkPersonalSave";
             this.linkPersonalSave.Size = new System.Drawing.Size(32, 13);
             this.linkPersonalSave.TabIndex = 16;
             this.linkPersonalSave.TabStop = true;
             this.linkPersonalSave.Text = "Save";
+            this.linkPersonalSave.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPersonalSave_LinkClicked);
             // 
             // linkPersonalEdit
             // 
@@ -395,6 +407,7 @@
             this.linkPersonalEdit.TabIndex = 15;
             this.linkPersonalEdit.TabStop = true;
             this.linkPersonalEdit.Text = "Edit";
+            this.linkPersonalEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPersonalEdit_LinkClicked);
             // 
             // radioFemale
             // 
@@ -429,26 +442,43 @@
             // 
             // dateDateOfBirth
             // 
+            this.dateDateOfBirth.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "DATE_Of_BIRTH", true));
+            this.dateDateOfBirth.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.pATIENT_TBLBindingSource, "DATE_Of_BIRTH", true));
             this.dateDateOfBirth.Location = new System.Drawing.Point(95, 158);
             this.dateDateOfBirth.Name = "dateDateOfBirth";
             this.dateDateOfBirth.Size = new System.Drawing.Size(207, 20);
             this.dateDateOfBirth.TabIndex = 11;
+            this.dateDateOfBirth.ValueChanged += new System.EventHandler(this.dateDateOfBirth_ValueChanged);
+            // 
+            // pATIENT_TBLBindingSource
+            // 
+            this.pATIENT_TBLBindingSource.DataMember = "PATIENT_TBL";
+            this.pATIENT_TBLBindingSource.DataSource = this.pchr42563DataSet;
+            // 
+            // pchr42563DataSet
+            // 
+            this.pchr42563DataSet.DataSetName = "pchr42563DataSet";
+            this.pchr42563DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtFirstName
             // 
+            this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "FIRST_NAME", true));
             this.txtFirstName.Location = new System.Drawing.Point(96, 127);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.ReadOnly = true;
             this.txtFirstName.Size = new System.Drawing.Size(207, 20);
             this.txtFirstName.TabIndex = 10;
+            this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
             // 
             // txtLastName
             // 
+            this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "LAST_NAME", true));
             this.txtLastName.Location = new System.Drawing.Point(95, 96);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.ReadOnly = true;
             this.txtLastName.Size = new System.Drawing.Size(207, 20);
             this.txtLastName.TabIndex = 9;
+            this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // txtInitials
             // 
@@ -457,6 +487,7 @@
             this.txtInitials.ReadOnly = true;
             this.txtInitials.Size = new System.Drawing.Size(100, 20);
             this.txtInitials.TabIndex = 8;
+            this.txtInitials.TextChanged += new System.EventHandler(this.txtInitials_TextChanged);
             // 
             // lblInitials
             // 
@@ -470,6 +501,7 @@
             // listTitle
             // 
             this.listTitle.AllowDrop = true;
+            this.listTitle.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pRIMARYCARETBLBindingSource, "TITLE", true));
             this.listTitle.FormattingEnabled = true;
             this.listTitle.Items.AddRange(new object[] {
             "Mr.",
@@ -480,14 +512,21 @@
             this.listTitle.Size = new System.Drawing.Size(47, 17);
             this.listTitle.TabIndex = 6;
             // 
+            // pRIMARYCARETBLBindingSource
+            // 
+            this.pRIMARYCARETBLBindingSource.DataMember = "PRIMARY_CARE_TBL";
+            this.pRIMARYCARETBLBindingSource.DataSource = this.pchr42563DataSet;
+            // 
             // txtIdentityNumber
             // 
             this.txtIdentityNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "PATIENT_ID", true));
+            this.txtIdentityNumber.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.pATIENT_TBLBindingSource, "PATIENT_ID", true));
             this.txtIdentityNumber.Location = new System.Drawing.Point(95, 27);
             this.txtIdentityNumber.Name = "txtIdentityNumber";
             this.txtIdentityNumber.ReadOnly = true;
             this.txtIdentityNumber.Size = new System.Drawing.Size(207, 20);
             this.txtIdentityNumber.TabIndex = 5;
+            this.txtIdentityNumber.TextChanged += new System.EventHandler(this.txtIdentityNumber_TextChanged);
             // 
             // lblDateOfBirth
             // 
@@ -564,179 +603,29 @@
             this.groupContactDetails.TabStop = false;
             this.groupContactDetails.Text = "Contact Details";
             // 
-            // lblContactDetailsAddress
-            // 
-            this.lblContactDetailsAddress.AutoSize = true;
-            this.lblContactDetailsAddress.Location = new System.Drawing.Point(7, 30);
-            this.lblContactDetailsAddress.Name = "lblContactDetailsAddress";
-            this.lblContactDetailsAddress.Size = new System.Drawing.Size(45, 13);
-            this.lblContactDetailsAddress.TabIndex = 0;
-            this.lblContactDetailsAddress.Text = "Address";
-            // 
-            // lblContactDetailsSuburb
-            // 
-            this.lblContactDetailsSuburb.AutoSize = true;
-            this.lblContactDetailsSuburb.Location = new System.Drawing.Point(7, 82);
-            this.lblContactDetailsSuburb.Name = "lblContactDetailsSuburb";
-            this.lblContactDetailsSuburb.Size = new System.Drawing.Size(41, 13);
-            this.lblContactDetailsSuburb.TabIndex = 1;
-            this.lblContactDetailsSuburb.Text = "Suburb";
-            // 
-            // lblContactDetailsCity
-            // 
-            this.lblContactDetailsCity.AutoSize = true;
-            this.lblContactDetailsCity.Location = new System.Drawing.Point(7, 106);
-            this.lblContactDetailsCity.Name = "lblContactDetailsCity";
-            this.lblContactDetailsCity.Size = new System.Drawing.Size(24, 13);
-            this.lblContactDetailsCity.TabIndex = 2;
-            this.lblContactDetailsCity.Text = "City";
-            // 
-            // lblContactDetailsHomeTelephone
-            // 
-            this.lblContactDetailsHomeTelephone.AutoSize = true;
-            this.lblContactDetailsHomeTelephone.Location = new System.Drawing.Point(5, 135);
-            this.lblContactDetailsHomeTelephone.Name = "lblContactDetailsHomeTelephone";
-            this.lblContactDetailsHomeTelephone.Size = new System.Drawing.Size(89, 13);
-            this.lblContactDetailsHomeTelephone.TabIndex = 3;
-            this.lblContactDetailsHomeTelephone.Text = "Home Telephone";
-            // 
-            // lblContactDetailsMobileTelephone
-            // 
-            this.lblContactDetailsMobileTelephone.AutoSize = true;
-            this.lblContactDetailsMobileTelephone.Location = new System.Drawing.Point(7, 166);
-            this.lblContactDetailsMobileTelephone.Name = "lblContactDetailsMobileTelephone";
-            this.lblContactDetailsMobileTelephone.Size = new System.Drawing.Size(89, 13);
-            this.lblContactDetailsMobileTelephone.TabIndex = 4;
-            this.lblContactDetailsMobileTelephone.Text = "MobileTelephone";
-            // 
-            // lblContactDetailsWorkTelephone
-            // 
-            this.lblContactDetailsWorkTelephone.AutoSize = true;
-            this.lblContactDetailsWorkTelephone.Location = new System.Drawing.Point(8, 200);
-            this.lblContactDetailsWorkTelephone.Name = "lblContactDetailsWorkTelephone";
-            this.lblContactDetailsWorkTelephone.Size = new System.Drawing.Size(87, 13);
-            this.lblContactDetailsWorkTelephone.TabIndex = 5;
-            this.lblContactDetailsWorkTelephone.Text = "Work Telephone";
-            // 
-            // lblContactDetailsFaxNumber
-            // 
-            this.lblContactDetailsFaxNumber.AutoSize = true;
-            this.lblContactDetailsFaxNumber.Location = new System.Drawing.Point(7, 229);
-            this.lblContactDetailsFaxNumber.Name = "lblContactDetailsFaxNumber";
-            this.lblContactDetailsFaxNumber.Size = new System.Drawing.Size(64, 13);
-            this.lblContactDetailsFaxNumber.TabIndex = 6;
-            this.lblContactDetailsFaxNumber.Text = "Fax Number";
-            // 
-            // lblContactDetailsEmail
-            // 
-            this.lblContactDetailsEmail.AutoSize = true;
-            this.lblContactDetailsEmail.Location = new System.Drawing.Point(11, 260);
-            this.lblContactDetailsEmail.Name = "lblContactDetailsEmail";
-            this.lblContactDetailsEmail.Size = new System.Drawing.Size(32, 13);
-            this.lblContactDetailsEmail.TabIndex = 7;
-            this.lblContactDetailsEmail.Text = "Email";
-            // 
-            // txtContactDetailsAddress
-            // 
-            this.txtContactDetailsAddress.Location = new System.Drawing.Point(116, 30);
-            this.txtContactDetailsAddress.Multiline = true;
-            this.txtContactDetailsAddress.Name = "txtContactDetailsAddress";
-            this.txtContactDetailsAddress.ReadOnly = true;
-            this.txtContactDetailsAddress.Size = new System.Drawing.Size(186, 40);
-            this.txtContactDetailsAddress.TabIndex = 8;
-            // 
-            // txtContactDetailsSuburb
-            // 
-            this.txtContactDetailsSuburb.Location = new System.Drawing.Point(116, 82);
-            this.txtContactDetailsSuburb.Name = "txtContactDetailsSuburb";
-            this.txtContactDetailsSuburb.ReadOnly = true;
-            this.txtContactDetailsSuburb.Size = new System.Drawing.Size(186, 20);
-            this.txtContactDetailsSuburb.TabIndex = 9;
-            // 
-            // txtContactDetailsCity
-            // 
-            this.txtContactDetailsCity.Location = new System.Drawing.Point(117, 106);
-            this.txtContactDetailsCity.Name = "txtContactDetailsCity";
-            this.txtContactDetailsCity.ReadOnly = true;
-            this.txtContactDetailsCity.Size = new System.Drawing.Size(186, 20);
-            this.txtContactDetailsCity.TabIndex = 10;
-            // 
-            // txContactDetailsHomeTelephone
-            // 
-            this.txContactDetailsHomeTelephone.Location = new System.Drawing.Point(116, 135);
-            this.txContactDetailsHomeTelephone.Name = "txContactDetailsHomeTelephone";
-            this.txContactDetailsHomeTelephone.ReadOnly = true;
-            this.txContactDetailsHomeTelephone.Size = new System.Drawing.Size(186, 20);
-            this.txContactDetailsHomeTelephone.TabIndex = 11;
-            // 
-            // txtContactDetailsMobileTelephone
-            // 
-            this.txtContactDetailsMobileTelephone.Location = new System.Drawing.Point(117, 166);
-            this.txtContactDetailsMobileTelephone.Name = "txtContactDetailsMobileTelephone";
-            this.txtContactDetailsMobileTelephone.ReadOnly = true;
-            this.txtContactDetailsMobileTelephone.Size = new System.Drawing.Size(186, 20);
-            this.txtContactDetailsMobileTelephone.TabIndex = 12;
-            // 
-            // txtContactDetailsWorkTelephone
-            // 
-            this.txtContactDetailsWorkTelephone.Location = new System.Drawing.Point(117, 200);
-            this.txtContactDetailsWorkTelephone.Name = "txtContactDetailsWorkTelephone";
-            this.txtContactDetailsWorkTelephone.ReadOnly = true;
-            this.txtContactDetailsWorkTelephone.Size = new System.Drawing.Size(186, 20);
-            this.txtContactDetailsWorkTelephone.TabIndex = 13;
-            // 
-            // txtContactDetailsFaxNumber
-            // 
-            this.txtContactDetailsFaxNumber.Location = new System.Drawing.Point(116, 229);
-            this.txtContactDetailsFaxNumber.Name = "txtContactDetailsFaxNumber";
-            this.txtContactDetailsFaxNumber.ReadOnly = true;
-            this.txtContactDetailsFaxNumber.Size = new System.Drawing.Size(186, 20);
-            this.txtContactDetailsFaxNumber.TabIndex = 14;
-            // 
-            // txtContactDetailsEmail
-            // 
-            this.txtContactDetailsEmail.Location = new System.Drawing.Point(117, 260);
-            this.txtContactDetailsEmail.Name = "txtContactDetailsEmail";
-            this.txtContactDetailsEmail.ReadOnly = true;
-            this.txtContactDetailsEmail.Size = new System.Drawing.Size(186, 20);
-            this.txtContactDetailsEmail.TabIndex = 15;
-            // 
-            // lbContactDetailslPostalCode
-            // 
-            this.lbContactDetailslPostalCode.AutoSize = true;
-            this.lbContactDetailslPostalCode.Location = new System.Drawing.Point(324, 106);
-            this.lbContactDetailslPostalCode.Name = "lbContactDetailslPostalCode";
-            this.lbContactDetailslPostalCode.Size = new System.Drawing.Size(64, 13);
-            this.lbContactDetailslPostalCode.TabIndex = 16;
-            this.lbContactDetailslPostalCode.Text = "Postal Code";
-            // 
-            // txtContactDetailsPostalCode
-            // 
-            this.txtContactDetailsPostalCode.Location = new System.Drawing.Point(327, 135);
-            this.txtContactDetailsPostalCode.Name = "txtContactDetailsPostalCode";
-            this.txtContactDetailsPostalCode.ReadOnly = true;
-            this.txtContactDetailsPostalCode.Size = new System.Drawing.Size(100, 20);
-            this.txtContactDetailsPostalCode.TabIndex = 17;
-            // 
             // linkContactDetailsCancel
             // 
             this.linkContactDetailsCancel.AutoSize = true;
+            this.linkContactDetailsCancel.Enabled = false;
             this.linkContactDetailsCancel.Location = new System.Drawing.Point(387, 236);
             this.linkContactDetailsCancel.Name = "linkContactDetailsCancel";
             this.linkContactDetailsCancel.Size = new System.Drawing.Size(40, 13);
             this.linkContactDetailsCancel.TabIndex = 20;
             this.linkContactDetailsCancel.TabStop = true;
             this.linkContactDetailsCancel.Text = "Cancel";
+            this.linkContactDetailsCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkContactDetailsCancel_LinkClicked);
             // 
             // linkContactDetailsSae
             // 
             this.linkContactDetailsSae.AutoSize = true;
+            this.linkContactDetailsSae.Enabled = false;
             this.linkContactDetailsSae.Location = new System.Drawing.Point(349, 236);
             this.linkContactDetailsSae.Name = "linkContactDetailsSae";
             this.linkContactDetailsSae.Size = new System.Drawing.Size(32, 13);
             this.linkContactDetailsSae.TabIndex = 19;
             this.linkContactDetailsSae.TabStop = true;
             this.linkContactDetailsSae.Text = "Save";
+            this.linkContactDetailsSae.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkContactDetailsSae_LinkClicked);
             // 
             // linkContactDetailsEdit
             // 
@@ -747,6 +636,175 @@
             this.linkContactDetailsEdit.TabIndex = 18;
             this.linkContactDetailsEdit.TabStop = true;
             this.linkContactDetailsEdit.Text = "Edit";
+            this.linkContactDetailsEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkContactDetailsEdit_LinkClicked);
+            // 
+            // txtContactDetailsPostalCode
+            // 
+            this.txtContactDetailsPostalCode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "ADDRESS_ZIP", true));
+            this.txtContactDetailsPostalCode.Location = new System.Drawing.Point(327, 135);
+            this.txtContactDetailsPostalCode.Name = "txtContactDetailsPostalCode";
+            this.txtContactDetailsPostalCode.ReadOnly = true;
+            this.txtContactDetailsPostalCode.Size = new System.Drawing.Size(100, 20);
+            this.txtContactDetailsPostalCode.TabIndex = 17;
+            this.txtContactDetailsPostalCode.TextChanged += new System.EventHandler(this.txtContactDetailsPostalCode_TextChanged);
+            // 
+            // lbContactDetailslPostalCode
+            // 
+            this.lbContactDetailslPostalCode.AutoSize = true;
+            this.lbContactDetailslPostalCode.Location = new System.Drawing.Point(324, 106);
+            this.lbContactDetailslPostalCode.Name = "lbContactDetailslPostalCode";
+            this.lbContactDetailslPostalCode.Size = new System.Drawing.Size(64, 13);
+            this.lbContactDetailslPostalCode.TabIndex = 16;
+            this.lbContactDetailslPostalCode.Text = "Postal Code";
+            // 
+            // txtContactDetailsEmail
+            // 
+            this.txtContactDetailsEmail.Location = new System.Drawing.Point(117, 260);
+            this.txtContactDetailsEmail.Name = "txtContactDetailsEmail";
+            this.txtContactDetailsEmail.ReadOnly = true;
+            this.txtContactDetailsEmail.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsEmail.TabIndex = 15;
+            this.txtContactDetailsEmail.TextChanged += new System.EventHandler(this.txtContactDetailsEmail_TextChanged);
+            // 
+            // txtContactDetailsFaxNumber
+            // 
+            this.txtContactDetailsFaxNumber.Location = new System.Drawing.Point(116, 229);
+            this.txtContactDetailsFaxNumber.Name = "txtContactDetailsFaxNumber";
+            this.txtContactDetailsFaxNumber.ReadOnly = true;
+            this.txtContactDetailsFaxNumber.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsFaxNumber.TabIndex = 14;
+            this.txtContactDetailsFaxNumber.TextChanged += new System.EventHandler(this.txtContactDetailsFaxNumber_TextChanged);
+            // 
+            // txtContactDetailsWorkTelephone
+            // 
+            this.txtContactDetailsWorkTelephone.Location = new System.Drawing.Point(117, 200);
+            this.txtContactDetailsWorkTelephone.Name = "txtContactDetailsWorkTelephone";
+            this.txtContactDetailsWorkTelephone.ReadOnly = true;
+            this.txtContactDetailsWorkTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsWorkTelephone.TabIndex = 13;
+            this.txtContactDetailsWorkTelephone.TextChanged += new System.EventHandler(this.txtContactDetailsWorkTelephone_TextChanged);
+            // 
+            // txtContactDetailsMobileTelephone
+            // 
+            this.txtContactDetailsMobileTelephone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "PHONE_MOBILE", true));
+            this.txtContactDetailsMobileTelephone.Location = new System.Drawing.Point(117, 166);
+            this.txtContactDetailsMobileTelephone.Name = "txtContactDetailsMobileTelephone";
+            this.txtContactDetailsMobileTelephone.ReadOnly = true;
+            this.txtContactDetailsMobileTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsMobileTelephone.TabIndex = 12;
+            this.txtContactDetailsMobileTelephone.TextChanged += new System.EventHandler(this.txtContactDetailsMobileTelephone_TextChanged);
+            // 
+            // txContactDetailsHomeTelephone
+            // 
+            this.txContactDetailsHomeTelephone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "PHONE_HOME", true));
+            this.txContactDetailsHomeTelephone.Location = new System.Drawing.Point(116, 135);
+            this.txContactDetailsHomeTelephone.Name = "txContactDetailsHomeTelephone";
+            this.txContactDetailsHomeTelephone.ReadOnly = true;
+            this.txContactDetailsHomeTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txContactDetailsHomeTelephone.TabIndex = 11;
+            this.txContactDetailsHomeTelephone.TextChanged += new System.EventHandler(this.txContactDetailsHomeTelephone_TextChanged);
+            // 
+            // txtContactDetailsCity
+            // 
+            this.txtContactDetailsCity.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "ADDRESS_CITY", true));
+            this.txtContactDetailsCity.Location = new System.Drawing.Point(117, 106);
+            this.txtContactDetailsCity.Name = "txtContactDetailsCity";
+            this.txtContactDetailsCity.ReadOnly = true;
+            this.txtContactDetailsCity.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsCity.TabIndex = 10;
+            this.txtContactDetailsCity.TextChanged += new System.EventHandler(this.txtContactDetailsCity_TextChanged);
+            // 
+            // txtContactDetailsSuburb
+            // 
+            this.txtContactDetailsSuburb.Location = new System.Drawing.Point(116, 82);
+            this.txtContactDetailsSuburb.Name = "txtContactDetailsSuburb";
+            this.txtContactDetailsSuburb.ReadOnly = true;
+            this.txtContactDetailsSuburb.Size = new System.Drawing.Size(186, 20);
+            this.txtContactDetailsSuburb.TabIndex = 9;
+            this.txtContactDetailsSuburb.TextChanged += new System.EventHandler(this.txtContactDetailsSuburb_TextChanged);
+            // 
+            // txtContactDetailsAddress
+            // 
+            this.txtContactDetailsAddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pATIENT_TBLBindingSource, "ADDRESS_STREET", true));
+            this.txtContactDetailsAddress.Location = new System.Drawing.Point(116, 30);
+            this.txtContactDetailsAddress.Multiline = true;
+            this.txtContactDetailsAddress.Name = "txtContactDetailsAddress";
+            this.txtContactDetailsAddress.ReadOnly = true;
+            this.txtContactDetailsAddress.Size = new System.Drawing.Size(186, 40);
+            this.txtContactDetailsAddress.TabIndex = 8;
+            this.txtContactDetailsAddress.TextChanged += new System.EventHandler(this.txtContactDetailsAddress_TextChanged);
+            // 
+            // lblContactDetailsEmail
+            // 
+            this.lblContactDetailsEmail.AutoSize = true;
+            this.lblContactDetailsEmail.Location = new System.Drawing.Point(11, 260);
+            this.lblContactDetailsEmail.Name = "lblContactDetailsEmail";
+            this.lblContactDetailsEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblContactDetailsEmail.TabIndex = 7;
+            this.lblContactDetailsEmail.Text = "Email";
+            // 
+            // lblContactDetailsFaxNumber
+            // 
+            this.lblContactDetailsFaxNumber.AutoSize = true;
+            this.lblContactDetailsFaxNumber.Location = new System.Drawing.Point(7, 229);
+            this.lblContactDetailsFaxNumber.Name = "lblContactDetailsFaxNumber";
+            this.lblContactDetailsFaxNumber.Size = new System.Drawing.Size(64, 13);
+            this.lblContactDetailsFaxNumber.TabIndex = 6;
+            this.lblContactDetailsFaxNumber.Text = "Fax Number";
+            // 
+            // lblContactDetailsWorkTelephone
+            // 
+            this.lblContactDetailsWorkTelephone.AutoSize = true;
+            this.lblContactDetailsWorkTelephone.Location = new System.Drawing.Point(8, 200);
+            this.lblContactDetailsWorkTelephone.Name = "lblContactDetailsWorkTelephone";
+            this.lblContactDetailsWorkTelephone.Size = new System.Drawing.Size(87, 13);
+            this.lblContactDetailsWorkTelephone.TabIndex = 5;
+            this.lblContactDetailsWorkTelephone.Text = "Work Telephone";
+            // 
+            // lblContactDetailsMobileTelephone
+            // 
+            this.lblContactDetailsMobileTelephone.AutoSize = true;
+            this.lblContactDetailsMobileTelephone.Location = new System.Drawing.Point(7, 166);
+            this.lblContactDetailsMobileTelephone.Name = "lblContactDetailsMobileTelephone";
+            this.lblContactDetailsMobileTelephone.Size = new System.Drawing.Size(89, 13);
+            this.lblContactDetailsMobileTelephone.TabIndex = 4;
+            this.lblContactDetailsMobileTelephone.Text = "MobileTelephone";
+            // 
+            // lblContactDetailsHomeTelephone
+            // 
+            this.lblContactDetailsHomeTelephone.AutoSize = true;
+            this.lblContactDetailsHomeTelephone.Location = new System.Drawing.Point(5, 135);
+            this.lblContactDetailsHomeTelephone.Name = "lblContactDetailsHomeTelephone";
+            this.lblContactDetailsHomeTelephone.Size = new System.Drawing.Size(89, 13);
+            this.lblContactDetailsHomeTelephone.TabIndex = 3;
+            this.lblContactDetailsHomeTelephone.Text = "Home Telephone";
+            // 
+            // lblContactDetailsCity
+            // 
+            this.lblContactDetailsCity.AutoSize = true;
+            this.lblContactDetailsCity.Location = new System.Drawing.Point(7, 106);
+            this.lblContactDetailsCity.Name = "lblContactDetailsCity";
+            this.lblContactDetailsCity.Size = new System.Drawing.Size(24, 13);
+            this.lblContactDetailsCity.TabIndex = 2;
+            this.lblContactDetailsCity.Text = "City";
+            // 
+            // lblContactDetailsSuburb
+            // 
+            this.lblContactDetailsSuburb.AutoSize = true;
+            this.lblContactDetailsSuburb.Location = new System.Drawing.Point(7, 82);
+            this.lblContactDetailsSuburb.Name = "lblContactDetailsSuburb";
+            this.lblContactDetailsSuburb.Size = new System.Drawing.Size(41, 13);
+            this.lblContactDetailsSuburb.TabIndex = 1;
+            this.lblContactDetailsSuburb.Text = "Suburb";
+            // 
+            // lblContactDetailsAddress
+            // 
+            this.lblContactDetailsAddress.AutoSize = true;
+            this.lblContactDetailsAddress.Location = new System.Drawing.Point(7, 30);
+            this.lblContactDetailsAddress.Name = "lblContactDetailsAddress";
+            this.lblContactDetailsAddress.Size = new System.Drawing.Size(45, 13);
+            this.lblContactDetailsAddress.TabIndex = 0;
+            this.lblContactDetailsAddress.Text = "Address";
             // 
             // groupEmergencyContactDetails
             // 
@@ -762,11 +820,11 @@
             this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsEmail);
             this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsFaxNumber);
             this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsWorkTelephone);
-            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyDetailsMobileTelephone);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsMobileTelephone);
             this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsHomeTelephone);
             this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsCity);
             this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsSuburb);
-            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergenctContactDetailsAddress);
+            this.groupEmergencyContactDetails.Controls.Add(this.txtEmergencyContactDetailsAddress);
             this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsEmail);
             this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsFaxNumber);
             this.groupEmergencyContactDetails.Controls.Add(this.lblEmergencyContactDetailsWorkTelephone);
@@ -782,25 +840,63 @@
             this.groupEmergencyContactDetails.TabStop = false;
             this.groupEmergencyContactDetails.Text = "Emergency Contact Details";
             // 
+            // txtRelationship
+            // 
+            this.txtRelationship.Location = new System.Drawing.Point(117, 44);
+            this.txtRelationship.Name = "txtRelationship";
+            this.txtRelationship.ReadOnly = true;
+            this.txtRelationship.Size = new System.Drawing.Size(186, 20);
+            this.txtRelationship.TabIndex = 24;
+            // 
+            // txtNextOfKin
+            // 
+            this.txtNextOfKin.Location = new System.Drawing.Point(116, 17);
+            this.txtNextOfKin.Name = "txtNextOfKin";
+            this.txtNextOfKin.ReadOnly = true;
+            this.txtNextOfKin.Size = new System.Drawing.Size(186, 20);
+            this.txtNextOfKin.TabIndex = 23;
+            // 
+            // lblRelationship
+            // 
+            this.lblRelationship.AutoSize = true;
+            this.lblRelationship.Location = new System.Drawing.Point(6, 47);
+            this.lblRelationship.Name = "lblRelationship";
+            this.lblRelationship.Size = new System.Drawing.Size(65, 13);
+            this.lblRelationship.TabIndex = 22;
+            this.lblRelationship.Text = "Relationship";
+            // 
+            // lblNextOfKin
+            // 
+            this.lblNextOfKin.AutoSize = true;
+            this.lblNextOfKin.Location = new System.Drawing.Point(6, 21);
+            this.lblNextOfKin.Name = "lblNextOfKin";
+            this.lblNextOfKin.Size = new System.Drawing.Size(59, 13);
+            this.lblNextOfKin.TabIndex = 21;
+            this.lblNextOfKin.Text = "Next of Kin";
+            // 
             // linkEmergencyContactDetailsCancel
             // 
             this.linkEmergencyContactDetailsCancel.AutoSize = true;
+            this.linkEmergencyContactDetailsCancel.Enabled = false;
             this.linkEmergencyContactDetailsCancel.Location = new System.Drawing.Point(386, 315);
             this.linkEmergencyContactDetailsCancel.Name = "linkEmergencyContactDetailsCancel";
             this.linkEmergencyContactDetailsCancel.Size = new System.Drawing.Size(40, 13);
             this.linkEmergencyContactDetailsCancel.TabIndex = 20;
             this.linkEmergencyContactDetailsCancel.TabStop = true;
             this.linkEmergencyContactDetailsCancel.Text = "Cancel";
+            this.linkEmergencyContactDetailsCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkEmergencyContactDetailsCancel_LinkClicked);
             // 
             // linkEmergencyContactDetailsSave
             // 
             this.linkEmergencyContactDetailsSave.AutoSize = true;
+            this.linkEmergencyContactDetailsSave.Enabled = false;
             this.linkEmergencyContactDetailsSave.Location = new System.Drawing.Point(348, 315);
             this.linkEmergencyContactDetailsSave.Name = "linkEmergencyContactDetailsSave";
             this.linkEmergencyContactDetailsSave.Size = new System.Drawing.Size(32, 13);
             this.linkEmergencyContactDetailsSave.TabIndex = 19;
             this.linkEmergencyContactDetailsSave.TabStop = true;
             this.linkEmergencyContactDetailsSave.Text = "Save";
+            this.linkEmergencyContactDetailsSave.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkEmergencyContactDetailsSave_LinkClicked);
             // 
             // linkEmergencyContactDetailsEdit
             // 
@@ -811,6 +907,7 @@
             this.linkEmergencyContactDetailsEdit.TabIndex = 18;
             this.linkEmergencyContactDetailsEdit.TabStop = true;
             this.linkEmergencyContactDetailsEdit.Text = "Edit";
+            this.linkEmergencyContactDetailsEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkEmergencyContactDetailsEdit_LinkClicked);
             // 
             // txtEmergencyContactDetailsPostalCode
             // 
@@ -819,6 +916,7 @@
             this.txtEmergencyContactDetailsPostalCode.ReadOnly = true;
             this.txtEmergencyContactDetailsPostalCode.Size = new System.Drawing.Size(100, 20);
             this.txtEmergencyContactDetailsPostalCode.TabIndex = 17;
+            this.txtEmergencyContactDetailsPostalCode.TextChanged += new System.EventHandler(this.txtEmergencyContactDetailsPostalCode_TextChanged);
             // 
             // lblEmergencyDetailsPostalCode
             // 
@@ -836,6 +934,7 @@
             this.txtEmergencyContactDetailsEmail.ReadOnly = true;
             this.txtEmergencyContactDetailsEmail.Size = new System.Drawing.Size(186, 20);
             this.txtEmergencyContactDetailsEmail.TabIndex = 15;
+            this.txtEmergencyContactDetailsEmail.TextChanged += new System.EventHandler(this.txtEmergencyContactDetailsEmail_TextChanged);
             // 
             // txtEmergencyContactDetailsFaxNumber
             // 
@@ -844,6 +943,7 @@
             this.txtEmergencyContactDetailsFaxNumber.ReadOnly = true;
             this.txtEmergencyContactDetailsFaxNumber.Size = new System.Drawing.Size(186, 20);
             this.txtEmergencyContactDetailsFaxNumber.TabIndex = 14;
+            this.txtEmergencyContactDetailsFaxNumber.TextChanged += new System.EventHandler(this.txtEmergencyContactDetailsFaxNumber_TextChanged);
             // 
             // txtEmergencyContactDetailsWorkTelephone
             // 
@@ -852,14 +952,16 @@
             this.txtEmergencyContactDetailsWorkTelephone.ReadOnly = true;
             this.txtEmergencyContactDetailsWorkTelephone.Size = new System.Drawing.Size(186, 20);
             this.txtEmergencyContactDetailsWorkTelephone.TabIndex = 13;
+            this.txtEmergencyContactDetailsWorkTelephone.TextChanged += new System.EventHandler(this.txtEmergencyContactDetailsWorkTelephone_TextChanged);
             // 
-            // txtEmergencyDetailsMobileTelephone
+            // txtEmergencyContactDetailsMobileTelephone
             // 
-            this.txtEmergencyDetailsMobileTelephone.Location = new System.Drawing.Point(116, 245);
-            this.txtEmergencyDetailsMobileTelephone.Name = "txtEmergencyDetailsMobileTelephone";
-            this.txtEmergencyDetailsMobileTelephone.ReadOnly = true;
-            this.txtEmergencyDetailsMobileTelephone.Size = new System.Drawing.Size(186, 20);
-            this.txtEmergencyDetailsMobileTelephone.TabIndex = 12;
+            this.txtEmergencyContactDetailsMobileTelephone.Location = new System.Drawing.Point(116, 245);
+            this.txtEmergencyContactDetailsMobileTelephone.Name = "txtEmergencyContactDetailsMobileTelephone";
+            this.txtEmergencyContactDetailsMobileTelephone.ReadOnly = true;
+            this.txtEmergencyContactDetailsMobileTelephone.Size = new System.Drawing.Size(186, 20);
+            this.txtEmergencyContactDetailsMobileTelephone.TabIndex = 12;
+            this.txtEmergencyContactDetailsMobileTelephone.TextChanged += new System.EventHandler(this.txtEmergencyDetailsMobileTelephone_TextChanged);
             // 
             // txtEmergencyContactDetailsHomeTelephone
             // 
@@ -868,6 +970,7 @@
             this.txtEmergencyContactDetailsHomeTelephone.ReadOnly = true;
             this.txtEmergencyContactDetailsHomeTelephone.Size = new System.Drawing.Size(186, 20);
             this.txtEmergencyContactDetailsHomeTelephone.TabIndex = 11;
+            this.txtEmergencyContactDetailsHomeTelephone.TextChanged += new System.EventHandler(this.txtEmergencyContactDetailsHomeTelephone_TextChanged);
             // 
             // txtEmergencyContactDetailsCity
             // 
@@ -876,6 +979,7 @@
             this.txtEmergencyContactDetailsCity.ReadOnly = true;
             this.txtEmergencyContactDetailsCity.Size = new System.Drawing.Size(186, 20);
             this.txtEmergencyContactDetailsCity.TabIndex = 10;
+            this.txtEmergencyContactDetailsCity.TextChanged += new System.EventHandler(this.txtEmergencyContactDetailsCity_TextChanged);
             // 
             // txtEmergencyContactDetailsSuburb
             // 
@@ -884,15 +988,17 @@
             this.txtEmergencyContactDetailsSuburb.ReadOnly = true;
             this.txtEmergencyContactDetailsSuburb.Size = new System.Drawing.Size(186, 20);
             this.txtEmergencyContactDetailsSuburb.TabIndex = 9;
+            this.txtEmergencyContactDetailsSuburb.TextChanged += new System.EventHandler(this.txtEmergencyContactDetailsSuburb_TextChanged);
             // 
-            // txtEmergenctContactDetailsAddress
+            // txtEmergencyContactDetailsAddress
             // 
-            this.txtEmergenctContactDetailsAddress.Location = new System.Drawing.Point(115, 109);
-            this.txtEmergenctContactDetailsAddress.Multiline = true;
-            this.txtEmergenctContactDetailsAddress.Name = "txtEmergenctContactDetailsAddress";
-            this.txtEmergenctContactDetailsAddress.ReadOnly = true;
-            this.txtEmergenctContactDetailsAddress.Size = new System.Drawing.Size(186, 40);
-            this.txtEmergenctContactDetailsAddress.TabIndex = 8;
+            this.txtEmergencyContactDetailsAddress.Location = new System.Drawing.Point(115, 109);
+            this.txtEmergencyContactDetailsAddress.Multiline = true;
+            this.txtEmergencyContactDetailsAddress.Name = "txtEmergencyContactDetailsAddress";
+            this.txtEmergencyContactDetailsAddress.ReadOnly = true;
+            this.txtEmergencyContactDetailsAddress.Size = new System.Drawing.Size(186, 40);
+            this.txtEmergencyContactDetailsAddress.TabIndex = 8;
+            this.txtEmergencyContactDetailsAddress.TextChanged += new System.EventHandler(this.txtEmergenctContactDetailsAddress_TextChanged);
             // 
             // lblEmergencyContactDetailsEmail
             // 
@@ -966,40 +1072,6 @@
             this.lblEmergencyContactDetailsAddress.TabIndex = 0;
             this.lblEmergencyContactDetailsAddress.Text = "Address";
             // 
-            // lblNextOfKin
-            // 
-            this.lblNextOfKin.AutoSize = true;
-            this.lblNextOfKin.Location = new System.Drawing.Point(13, 21);
-            this.lblNextOfKin.Name = "lblNextOfKin";
-            this.lblNextOfKin.Size = new System.Drawing.Size(59, 13);
-            this.lblNextOfKin.TabIndex = 21;
-            this.lblNextOfKin.Text = "Next of Kin";
-            // 
-            // lblRelationship
-            // 
-            this.lblRelationship.AutoSize = true;
-            this.lblRelationship.Location = new System.Drawing.Point(13, 48);
-            this.lblRelationship.Name = "lblRelationship";
-            this.lblRelationship.Size = new System.Drawing.Size(65, 13);
-            this.lblRelationship.TabIndex = 22;
-            this.lblRelationship.Text = "Relationship";
-            // 
-            // txtRelationship
-            // 
-            this.txtRelationship.Location = new System.Drawing.Point(117, 44);
-            this.txtRelationship.Name = "txtRelationship";
-            this.txtRelationship.ReadOnly = true;
-            this.txtRelationship.Size = new System.Drawing.Size(186, 20);
-            this.txtRelationship.TabIndex = 24;
-            // 
-            // txtNextOfKin
-            // 
-            this.txtNextOfKin.Location = new System.Drawing.Point(116, 17);
-            this.txtNextOfKin.Name = "txtNextOfKin";
-            this.txtNextOfKin.ReadOnly = true;
-            this.txtNextOfKin.Size = new System.Drawing.Size(186, 20);
-            this.txtNextOfKin.TabIndex = 23;
-            // 
             // groupPrimeartCareProviderDetails
             // 
             this.groupPrimeartCareProviderDetails.Controls.Add(this.linkPrimaryCareProviderDetailsCancel);
@@ -1024,127 +1096,29 @@
             this.groupPrimeartCareProviderDetails.TabStop = false;
             this.groupPrimeartCareProviderDetails.Text = "Primary Care Provider Details";
             // 
-            // lblPrimaryCareProviderDetailsFullName
-            // 
-            this.lblPrimaryCareProviderDetailsFullName.AutoSize = true;
-            this.lblPrimaryCareProviderDetailsFullName.Location = new System.Drawing.Point(16, 29);
-            this.lblPrimaryCareProviderDetailsFullName.Name = "lblPrimaryCareProviderDetailsFullName";
-            this.lblPrimaryCareProviderDetailsFullName.Size = new System.Drawing.Size(54, 13);
-            this.lblPrimaryCareProviderDetailsFullName.TabIndex = 0;
-            this.lblPrimaryCareProviderDetailsFullName.Text = "Full Name";
-            // 
-            // lblPrimaryCareProviderDetailsSpecialty
-            // 
-            this.lblPrimaryCareProviderDetailsSpecialty.AutoSize = true;
-            this.lblPrimaryCareProviderDetailsSpecialty.Location = new System.Drawing.Point(16, 55);
-            this.lblPrimaryCareProviderDetailsSpecialty.Name = "lblPrimaryCareProviderDetailsSpecialty";
-            this.lblPrimaryCareProviderDetailsSpecialty.Size = new System.Drawing.Size(50, 13);
-            this.lblPrimaryCareProviderDetailsSpecialty.TabIndex = 1;
-            this.lblPrimaryCareProviderDetailsSpecialty.Text = "Specialty";
-            // 
-            // lblPrimaryCareProviderDetailsMobileTelephone
-            // 
-            this.lblPrimaryCareProviderDetailsMobileTelephone.AutoSize = true;
-            this.lblPrimaryCareProviderDetailsMobileTelephone.Location = new System.Drawing.Point(16, 81);
-            this.lblPrimaryCareProviderDetailsMobileTelephone.Name = "lblPrimaryCareProviderDetailsMobileTelephone";
-            this.lblPrimaryCareProviderDetailsMobileTelephone.Size = new System.Drawing.Size(92, 13);
-            this.lblPrimaryCareProviderDetailsMobileTelephone.TabIndex = 2;
-            this.lblPrimaryCareProviderDetailsMobileTelephone.Text = "Mobile Telephone";
-            // 
-            // lbl
-            // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(16, 107);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(87, 13);
-            this.lbl.TabIndex = 3;
-            this.lbl.Text = "Work Telephone";
-            // 
-            // lblPrimaryCareProviderDetailsFaxNumber
-            // 
-            this.lblPrimaryCareProviderDetailsFaxNumber.AutoSize = true;
-            this.lblPrimaryCareProviderDetailsFaxNumber.Location = new System.Drawing.Point(16, 133);
-            this.lblPrimaryCareProviderDetailsFaxNumber.Name = "lblPrimaryCareProviderDetailsFaxNumber";
-            this.lblPrimaryCareProviderDetailsFaxNumber.Size = new System.Drawing.Size(64, 13);
-            this.lblPrimaryCareProviderDetailsFaxNumber.TabIndex = 4;
-            this.lblPrimaryCareProviderDetailsFaxNumber.Text = "Fax Number";
-            // 
-            // lblPrimaryCareProviderDetailsEmail
-            // 
-            this.lblPrimaryCareProviderDetailsEmail.AutoSize = true;
-            this.lblPrimaryCareProviderDetailsEmail.Location = new System.Drawing.Point(16, 159);
-            this.lblPrimaryCareProviderDetailsEmail.Name = "lblPrimaryCareProviderDetailsEmail";
-            this.lblPrimaryCareProviderDetailsEmail.Size = new System.Drawing.Size(32, 13);
-            this.lblPrimaryCareProviderDetailsEmail.TabIndex = 5;
-            this.lblPrimaryCareProviderDetailsEmail.Text = "Email";
-            // 
-            // txtPrimaryCareProviderDetailsFullName
-            // 
-            this.txtPrimaryCareProviderDetailsFullName.Location = new System.Drawing.Point(129, 29);
-            this.txtPrimaryCareProviderDetailsFullName.Name = "txtPrimaryCareProviderDetailsFullName";
-            this.txtPrimaryCareProviderDetailsFullName.ReadOnly = true;
-            this.txtPrimaryCareProviderDetailsFullName.Size = new System.Drawing.Size(357, 20);
-            this.txtPrimaryCareProviderDetailsFullName.TabIndex = 6;
-            // 
-            // txtPrimaryCareProviderDetailsSpecialty
-            // 
-            this.txtPrimaryCareProviderDetailsSpecialty.Location = new System.Drawing.Point(129, 55);
-            this.txtPrimaryCareProviderDetailsSpecialty.Name = "txtPrimaryCareProviderDetailsSpecialty";
-            this.txtPrimaryCareProviderDetailsSpecialty.ReadOnly = true;
-            this.txtPrimaryCareProviderDetailsSpecialty.Size = new System.Drawing.Size(196, 20);
-            this.txtPrimaryCareProviderDetailsSpecialty.TabIndex = 7;
-            // 
-            // txtPrimaryCareProviderDetailsMobileTelephone
-            // 
-            this.txtPrimaryCareProviderDetailsMobileTelephone.Location = new System.Drawing.Point(129, 81);
-            this.txtPrimaryCareProviderDetailsMobileTelephone.Name = "txtPrimaryCareProviderDetailsMobileTelephone";
-            this.txtPrimaryCareProviderDetailsMobileTelephone.ReadOnly = true;
-            this.txtPrimaryCareProviderDetailsMobileTelephone.Size = new System.Drawing.Size(196, 20);
-            this.txtPrimaryCareProviderDetailsMobileTelephone.TabIndex = 8;
-            // 
-            // txtPrimaryCareProviderDetailsWorkTelephone
-            // 
-            this.txtPrimaryCareProviderDetailsWorkTelephone.Location = new System.Drawing.Point(129, 107);
-            this.txtPrimaryCareProviderDetailsWorkTelephone.Name = "txtPrimaryCareProviderDetailsWorkTelephone";
-            this.txtPrimaryCareProviderDetailsWorkTelephone.ReadOnly = true;
-            this.txtPrimaryCareProviderDetailsWorkTelephone.Size = new System.Drawing.Size(196, 20);
-            this.txtPrimaryCareProviderDetailsWorkTelephone.TabIndex = 9;
-            // 
-            // txtPrimaryCareProviderDetailsFaxNumber
-            // 
-            this.txtPrimaryCareProviderDetailsFaxNumber.Location = new System.Drawing.Point(128, 133);
-            this.txtPrimaryCareProviderDetailsFaxNumber.Name = "txtPrimaryCareProviderDetailsFaxNumber";
-            this.txtPrimaryCareProviderDetailsFaxNumber.ReadOnly = true;
-            this.txtPrimaryCareProviderDetailsFaxNumber.Size = new System.Drawing.Size(196, 20);
-            this.txtPrimaryCareProviderDetailsFaxNumber.TabIndex = 10;
-            // 
-            // txtPrimaryCareProviderDetailsEmail
-            // 
-            this.txtPrimaryCareProviderDetailsEmail.Location = new System.Drawing.Point(129, 159);
-            this.txtPrimaryCareProviderDetailsEmail.Name = "txtPrimaryCareProviderDetailsEmail";
-            this.txtPrimaryCareProviderDetailsEmail.ReadOnly = true;
-            this.txtPrimaryCareProviderDetailsEmail.Size = new System.Drawing.Size(196, 20);
-            this.txtPrimaryCareProviderDetailsEmail.TabIndex = 11;
-            // 
             // linkPrimaryCareProviderDetailsCancel
             // 
             this.linkPrimaryCareProviderDetailsCancel.AutoSize = true;
+            this.linkPrimaryCareProviderDetailsCancel.Enabled = false;
             this.linkPrimaryCareProviderDetailsCancel.Location = new System.Drawing.Point(433, 140);
             this.linkPrimaryCareProviderDetailsCancel.Name = "linkPrimaryCareProviderDetailsCancel";
             this.linkPrimaryCareProviderDetailsCancel.Size = new System.Drawing.Size(40, 13);
             this.linkPrimaryCareProviderDetailsCancel.TabIndex = 23;
             this.linkPrimaryCareProviderDetailsCancel.TabStop = true;
             this.linkPrimaryCareProviderDetailsCancel.Text = "Cancel";
+            this.linkPrimaryCareProviderDetailsCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPrimaryCareProviderDetailsCancel_LinkClicked);
             // 
             // linkPrimaryCareProviderDetailsSave
             // 
             this.linkPrimaryCareProviderDetailsSave.AutoSize = true;
+            this.linkPrimaryCareProviderDetailsSave.Enabled = false;
             this.linkPrimaryCareProviderDetailsSave.Location = new System.Drawing.Point(395, 140);
             this.linkPrimaryCareProviderDetailsSave.Name = "linkPrimaryCareProviderDetailsSave";
             this.linkPrimaryCareProviderDetailsSave.Size = new System.Drawing.Size(32, 13);
             this.linkPrimaryCareProviderDetailsSave.TabIndex = 22;
             this.linkPrimaryCareProviderDetailsSave.TabStop = true;
             this.linkPrimaryCareProviderDetailsSave.Text = "Save";
+            this.linkPrimaryCareProviderDetailsSave.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPrimaryCareProviderDetailsSave_LinkClicked);
             // 
             // linkPrimaryCareProviderDetailsEdit
             // 
@@ -1155,9 +1129,125 @@
             this.linkPrimaryCareProviderDetailsEdit.TabIndex = 21;
             this.linkPrimaryCareProviderDetailsEdit.TabStop = true;
             this.linkPrimaryCareProviderDetailsEdit.Text = "Edit";
+            this.linkPrimaryCareProviderDetailsEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPrimaryCareProviderDetailsEdit_LinkClicked);
+            // 
+            // txtPrimaryCareProviderDetailsEmail
+            // 
+            this.txtPrimaryCareProviderDetailsEmail.Location = new System.Drawing.Point(129, 159);
+            this.txtPrimaryCareProviderDetailsEmail.Name = "txtPrimaryCareProviderDetailsEmail";
+            this.txtPrimaryCareProviderDetailsEmail.ReadOnly = true;
+            this.txtPrimaryCareProviderDetailsEmail.Size = new System.Drawing.Size(196, 20);
+            this.txtPrimaryCareProviderDetailsEmail.TabIndex = 11;
+            this.txtPrimaryCareProviderDetailsEmail.TextChanged += new System.EventHandler(this.txtPrimaryCareProviderDetailsEmail_TextChanged);
+            // 
+            // txtPrimaryCareProviderDetailsFaxNumber
+            // 
+            this.txtPrimaryCareProviderDetailsFaxNumber.Location = new System.Drawing.Point(128, 133);
+            this.txtPrimaryCareProviderDetailsFaxNumber.Name = "txtPrimaryCareProviderDetailsFaxNumber";
+            this.txtPrimaryCareProviderDetailsFaxNumber.ReadOnly = true;
+            this.txtPrimaryCareProviderDetailsFaxNumber.Size = new System.Drawing.Size(196, 20);
+            this.txtPrimaryCareProviderDetailsFaxNumber.TabIndex = 10;
+            this.txtPrimaryCareProviderDetailsFaxNumber.TextChanged += new System.EventHandler(this.txtPrimaryCareProviderDetailsFaxNumber_TextChanged);
+            // 
+            // txtPrimaryCareProviderDetailsWorkTelephone
+            // 
+            this.txtPrimaryCareProviderDetailsWorkTelephone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRIMARYCARETBLBindingSource, "PHONE_OFFICE", true));
+            this.txtPrimaryCareProviderDetailsWorkTelephone.Location = new System.Drawing.Point(129, 107);
+            this.txtPrimaryCareProviderDetailsWorkTelephone.Name = "txtPrimaryCareProviderDetailsWorkTelephone";
+            this.txtPrimaryCareProviderDetailsWorkTelephone.ReadOnly = true;
+            this.txtPrimaryCareProviderDetailsWorkTelephone.Size = new System.Drawing.Size(196, 20);
+            this.txtPrimaryCareProviderDetailsWorkTelephone.TabIndex = 9;
+            this.txtPrimaryCareProviderDetailsWorkTelephone.TextChanged += new System.EventHandler(this.txtPrimaryCareProviderDetailsWorkTelephone_TextChanged);
+            // 
+            // txtPrimaryCareProviderDetailsMobileTelephone
+            // 
+            this.txtPrimaryCareProviderDetailsMobileTelephone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRIMARYCARETBLBindingSource, "PHONE_MOBILE", true));
+            this.txtPrimaryCareProviderDetailsMobileTelephone.Location = new System.Drawing.Point(129, 81);
+            this.txtPrimaryCareProviderDetailsMobileTelephone.Name = "txtPrimaryCareProviderDetailsMobileTelephone";
+            this.txtPrimaryCareProviderDetailsMobileTelephone.ReadOnly = true;
+            this.txtPrimaryCareProviderDetailsMobileTelephone.Size = new System.Drawing.Size(196, 20);
+            this.txtPrimaryCareProviderDetailsMobileTelephone.TabIndex = 8;
+            this.txtPrimaryCareProviderDetailsMobileTelephone.TextChanged += new System.EventHandler(this.txtPrimaryCareProviderDetailsMobileTelephone_TextChanged);
+            // 
+            // txtPrimaryCareProviderDetailsSpecialty
+            // 
+            this.txtPrimaryCareProviderDetailsSpecialty.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRIMARYCARETBLBindingSource, "SPECIALTY", true));
+            this.txtPrimaryCareProviderDetailsSpecialty.Location = new System.Drawing.Point(129, 55);
+            this.txtPrimaryCareProviderDetailsSpecialty.Name = "txtPrimaryCareProviderDetailsSpecialty";
+            this.txtPrimaryCareProviderDetailsSpecialty.ReadOnly = true;
+            this.txtPrimaryCareProviderDetailsSpecialty.Size = new System.Drawing.Size(196, 20);
+            this.txtPrimaryCareProviderDetailsSpecialty.TabIndex = 7;
+            this.txtPrimaryCareProviderDetailsSpecialty.TextChanged += new System.EventHandler(this.txtPrimaryCareProviderDetailsSpecialty_TextChanged);
+            // 
+            // txtPrimaryCareProviderDetailsFullName
+            // 
+            this.txtPrimaryCareProviderDetailsFullName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRIMARYCARETBLBindingSource, "NAME_LAST", true));
+            this.txtPrimaryCareProviderDetailsFullName.Location = new System.Drawing.Point(129, 29);
+            this.txtPrimaryCareProviderDetailsFullName.Name = "txtPrimaryCareProviderDetailsFullName";
+            this.txtPrimaryCareProviderDetailsFullName.ReadOnly = true;
+            this.txtPrimaryCareProviderDetailsFullName.Size = new System.Drawing.Size(357, 20);
+            this.txtPrimaryCareProviderDetailsFullName.TabIndex = 6;
+            this.txtPrimaryCareProviderDetailsFullName.TextChanged += new System.EventHandler(this.txtPrimaryCareProviderDetailsFullName_TextChanged);
+            // 
+            // lblPrimaryCareProviderDetailsEmail
+            // 
+            this.lblPrimaryCareProviderDetailsEmail.AutoSize = true;
+            this.lblPrimaryCareProviderDetailsEmail.Location = new System.Drawing.Point(16, 159);
+            this.lblPrimaryCareProviderDetailsEmail.Name = "lblPrimaryCareProviderDetailsEmail";
+            this.lblPrimaryCareProviderDetailsEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblPrimaryCareProviderDetailsEmail.TabIndex = 5;
+            this.lblPrimaryCareProviderDetailsEmail.Text = "Email";
+            // 
+            // lblPrimaryCareProviderDetailsFaxNumber
+            // 
+            this.lblPrimaryCareProviderDetailsFaxNumber.AutoSize = true;
+            this.lblPrimaryCareProviderDetailsFaxNumber.Location = new System.Drawing.Point(16, 133);
+            this.lblPrimaryCareProviderDetailsFaxNumber.Name = "lblPrimaryCareProviderDetailsFaxNumber";
+            this.lblPrimaryCareProviderDetailsFaxNumber.Size = new System.Drawing.Size(64, 13);
+            this.lblPrimaryCareProviderDetailsFaxNumber.TabIndex = 4;
+            this.lblPrimaryCareProviderDetailsFaxNumber.Text = "Fax Number";
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(16, 107);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(87, 13);
+            this.lbl.TabIndex = 3;
+            this.lbl.Text = "Work Telephone";
+            // 
+            // lblPrimaryCareProviderDetailsMobileTelephone
+            // 
+            this.lblPrimaryCareProviderDetailsMobileTelephone.AutoSize = true;
+            this.lblPrimaryCareProviderDetailsMobileTelephone.Location = new System.Drawing.Point(16, 81);
+            this.lblPrimaryCareProviderDetailsMobileTelephone.Name = "lblPrimaryCareProviderDetailsMobileTelephone";
+            this.lblPrimaryCareProviderDetailsMobileTelephone.Size = new System.Drawing.Size(92, 13);
+            this.lblPrimaryCareProviderDetailsMobileTelephone.TabIndex = 2;
+            this.lblPrimaryCareProviderDetailsMobileTelephone.Text = "Mobile Telephone";
+            // 
+            // lblPrimaryCareProviderDetailsSpecialty
+            // 
+            this.lblPrimaryCareProviderDetailsSpecialty.AutoSize = true;
+            this.lblPrimaryCareProviderDetailsSpecialty.Location = new System.Drawing.Point(16, 55);
+            this.lblPrimaryCareProviderDetailsSpecialty.Name = "lblPrimaryCareProviderDetailsSpecialty";
+            this.lblPrimaryCareProviderDetailsSpecialty.Size = new System.Drawing.Size(50, 13);
+            this.lblPrimaryCareProviderDetailsSpecialty.TabIndex = 1;
+            this.lblPrimaryCareProviderDetailsSpecialty.Text = "Specialty";
+            // 
+            // lblPrimaryCareProviderDetailsFullName
+            // 
+            this.lblPrimaryCareProviderDetailsFullName.AutoSize = true;
+            this.lblPrimaryCareProviderDetailsFullName.Location = new System.Drawing.Point(16, 29);
+            this.lblPrimaryCareProviderDetailsFullName.Name = "lblPrimaryCareProviderDetailsFullName";
+            this.lblPrimaryCareProviderDetailsFullName.Size = new System.Drawing.Size(54, 13);
+            this.lblPrimaryCareProviderDetailsFullName.TabIndex = 0;
+            this.lblPrimaryCareProviderDetailsFullName.Text = "Full Name";
             // 
             // groupHealthInsuranceDetails
             // 
+            this.groupHealthInsuranceDetails.Controls.Add(this.linkInsuranceCancel);
+            this.groupHealthInsuranceDetails.Controls.Add(this.linkInsuranceSave);
+            this.groupHealthInsuranceDetails.Controls.Add(this.linkInsuranceEdit);
             this.groupHealthInsuranceDetails.Controls.Add(this.txtHealthInsuranceDetailsInsurancePlan);
             this.groupHealthInsuranceDetails.Controls.Add(this.txtHealthInsuranceDetailsInsurer);
             this.groupHealthInsuranceDetails.Controls.Add(this.txtHealthInsuranceDetailsInsuranceNumber);
@@ -1171,23 +1261,32 @@
             this.groupHealthInsuranceDetails.TabStop = false;
             this.groupHealthInsuranceDetails.Text = "Health Insurance Details";
             // 
-            // lblHealthInsuranceDetailsInsurer
+            // txtHealthInsuranceDetailsInsurancePlan
             // 
-            this.lblHealthInsuranceDetailsInsurer.AutoSize = true;
-            this.lblHealthInsuranceDetailsInsurer.Location = new System.Drawing.Point(13, 31);
-            this.lblHealthInsuranceDetailsInsurer.Name = "lblHealthInsuranceDetailsInsurer";
-            this.lblHealthInsuranceDetailsInsurer.Size = new System.Drawing.Size(39, 13);
-            this.lblHealthInsuranceDetailsInsurer.TabIndex = 0;
-            this.lblHealthInsuranceDetailsInsurer.Text = "Insurer";
+            this.txtHealthInsuranceDetailsInsurancePlan.Location = new System.Drawing.Point(115, 76);
+            this.txtHealthInsuranceDetailsInsurancePlan.Name = "txtHealthInsuranceDetailsInsurancePlan";
+            this.txtHealthInsuranceDetailsInsurancePlan.ReadOnly = true;
+            this.txtHealthInsuranceDetailsInsurancePlan.Size = new System.Drawing.Size(227, 20);
+            this.txtHealthInsuranceDetailsInsurancePlan.TabIndex = 5;
+            this.txtHealthInsuranceDetailsInsurancePlan.TextChanged += new System.EventHandler(this.txtHealthInsuranceDetailsInsurancePlan_TextChanged);
             // 
-            // lblHealthInsuranceDetailsInsurancePlan
+            // txtHealthInsuranceDetailsInsurer
             // 
-            this.lblHealthInsuranceDetailsInsurancePlan.AutoSize = true;
-            this.lblHealthInsuranceDetailsInsurancePlan.Location = new System.Drawing.Point(13, 79);
-            this.lblHealthInsuranceDetailsInsurancePlan.Name = "lblHealthInsuranceDetailsInsurancePlan";
-            this.lblHealthInsuranceDetailsInsurancePlan.Size = new System.Drawing.Size(78, 13);
-            this.lblHealthInsuranceDetailsInsurancePlan.TabIndex = 1;
-            this.lblHealthInsuranceDetailsInsurancePlan.Text = "Insurance Plan";
+            this.txtHealthInsuranceDetailsInsurer.Location = new System.Drawing.Point(115, 28);
+            this.txtHealthInsuranceDetailsInsurer.Name = "txtHealthInsuranceDetailsInsurer";
+            this.txtHealthInsuranceDetailsInsurer.ReadOnly = true;
+            this.txtHealthInsuranceDetailsInsurer.Size = new System.Drawing.Size(371, 20);
+            this.txtHealthInsuranceDetailsInsurer.TabIndex = 4;
+            this.txtHealthInsuranceDetailsInsurer.TextChanged += new System.EventHandler(this.txtHealthInsuranceDetailsInsurer_TextChanged);
+            // 
+            // txtHealthInsuranceDetailsInsuranceNumber
+            // 
+            this.txtHealthInsuranceDetailsInsuranceNumber.Location = new System.Drawing.Point(115, 124);
+            this.txtHealthInsuranceDetailsInsuranceNumber.Name = "txtHealthInsuranceDetailsInsuranceNumber";
+            this.txtHealthInsuranceDetailsInsuranceNumber.ReadOnly = true;
+            this.txtHealthInsuranceDetailsInsuranceNumber.Size = new System.Drawing.Size(227, 20);
+            this.txtHealthInsuranceDetailsInsuranceNumber.TabIndex = 3;
+            this.txtHealthInsuranceDetailsInsuranceNumber.TextChanged += new System.EventHandler(this.txtHealthInsuranceDetailsInsuranceNumber_TextChanged);
             // 
             // lblHealthInsuranceDetailsInsuranceNumber
             // 
@@ -1198,39 +1297,23 @@
             this.lblHealthInsuranceDetailsInsuranceNumber.TabIndex = 2;
             this.lblHealthInsuranceDetailsInsuranceNumber.Text = "Insurance Number";
             // 
-            // txtHealthInsuranceDetailsInsuranceNumber
+            // lblHealthInsuranceDetailsInsurancePlan
             // 
-            this.txtHealthInsuranceDetailsInsuranceNumber.Location = new System.Drawing.Point(115, 124);
-            this.txtHealthInsuranceDetailsInsuranceNumber.Name = "txtHealthInsuranceDetailsInsuranceNumber";
-            this.txtHealthInsuranceDetailsInsuranceNumber.ReadOnly = true;
-            this.txtHealthInsuranceDetailsInsuranceNumber.Size = new System.Drawing.Size(227, 20);
-            this.txtHealthInsuranceDetailsInsuranceNumber.TabIndex = 3;
+            this.lblHealthInsuranceDetailsInsurancePlan.AutoSize = true;
+            this.lblHealthInsuranceDetailsInsurancePlan.Location = new System.Drawing.Point(13, 79);
+            this.lblHealthInsuranceDetailsInsurancePlan.Name = "lblHealthInsuranceDetailsInsurancePlan";
+            this.lblHealthInsuranceDetailsInsurancePlan.Size = new System.Drawing.Size(78, 13);
+            this.lblHealthInsuranceDetailsInsurancePlan.TabIndex = 1;
+            this.lblHealthInsuranceDetailsInsurancePlan.Text = "Insurance Plan";
             // 
-            // txtHealthInsuranceDetailsInsurer
+            // lblHealthInsuranceDetailsInsurer
             // 
-            this.txtHealthInsuranceDetailsInsurer.Location = new System.Drawing.Point(115, 28);
-            this.txtHealthInsuranceDetailsInsurer.Name = "txtHealthInsuranceDetailsInsurer";
-            this.txtHealthInsuranceDetailsInsurer.ReadOnly = true;
-            this.txtHealthInsuranceDetailsInsurer.Size = new System.Drawing.Size(371, 20);
-            this.txtHealthInsuranceDetailsInsurer.TabIndex = 4;
-            // 
-            // txtHealthInsuranceDetailsInsurancePlan
-            // 
-            this.txtHealthInsuranceDetailsInsurancePlan.Location = new System.Drawing.Point(115, 76);
-            this.txtHealthInsuranceDetailsInsurancePlan.Name = "txtHealthInsuranceDetailsInsurancePlan";
-            this.txtHealthInsuranceDetailsInsurancePlan.ReadOnly = true;
-            this.txtHealthInsuranceDetailsInsurancePlan.Size = new System.Drawing.Size(227, 20);
-            this.txtHealthInsuranceDetailsInsurancePlan.TabIndex = 5;
-            // 
-            // pchr42563DataSet
-            // 
-            this.pchr42563DataSet.DataSetName = "pchr42563DataSet";
-            this.pchr42563DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pATIENT_TBLBindingSource
-            // 
-            this.pATIENT_TBLBindingSource.DataMember = "PATIENT_TBL";
-            this.pATIENT_TBLBindingSource.DataSource = this.pchr42563DataSet;
+            this.lblHealthInsuranceDetailsInsurer.AutoSize = true;
+            this.lblHealthInsuranceDetailsInsurer.Location = new System.Drawing.Point(13, 31);
+            this.lblHealthInsuranceDetailsInsurer.Name = "lblHealthInsuranceDetailsInsurer";
+            this.lblHealthInsuranceDetailsInsurer.Size = new System.Drawing.Size(39, 13);
+            this.lblHealthInsuranceDetailsInsurer.TabIndex = 0;
+            this.lblHealthInsuranceDetailsInsurer.Text = "Insurer";
             // 
             // pATIENT_TBLTableAdapter
             // 
@@ -1242,6 +1325,45 @@
             this.tableAdapterManager.PATIENT_TBLTableAdapter = this.pATIENT_TBLTableAdapter;
             this.tableAdapterManager.PRIMARY_CARE_TBLTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.pchr42563DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // pRIMARY_CARE_TBLTableAdapter
+            // 
+            this.pRIMARY_CARE_TBLTableAdapter.ClearBeforeFill = true;
+            // 
+            // linkInsuranceCancel
+            // 
+            this.linkInsuranceCancel.AutoSize = true;
+            this.linkInsuranceCancel.Enabled = false;
+            this.linkInsuranceCancel.Location = new System.Drawing.Point(433, 114);
+            this.linkInsuranceCancel.Name = "linkInsuranceCancel";
+            this.linkInsuranceCancel.Size = new System.Drawing.Size(40, 13);
+            this.linkInsuranceCancel.TabIndex = 26;
+            this.linkInsuranceCancel.TabStop = true;
+            this.linkInsuranceCancel.Text = "Cancel";
+            this.linkInsuranceCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceCancel_LinkClicked);
+            // 
+            // linkInsuranceSave
+            // 
+            this.linkInsuranceSave.AutoSize = true;
+            this.linkInsuranceSave.Enabled = false;
+            this.linkInsuranceSave.Location = new System.Drawing.Point(395, 114);
+            this.linkInsuranceSave.Name = "linkInsuranceSave";
+            this.linkInsuranceSave.Size = new System.Drawing.Size(32, 13);
+            this.linkInsuranceSave.TabIndex = 25;
+            this.linkInsuranceSave.TabStop = true;
+            this.linkInsuranceSave.Text = "Save";
+            this.linkInsuranceSave.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceSave_LinkClicked);
+            // 
+            // linkInsuranceEdit
+            // 
+            this.linkInsuranceEdit.AutoSize = true;
+            this.linkInsuranceEdit.Location = new System.Drawing.Point(364, 114);
+            this.linkInsuranceEdit.Name = "linkInsuranceEdit";
+            this.linkInsuranceEdit.Size = new System.Drawing.Size(25, 13);
+            this.linkInsuranceEdit.TabIndex = 24;
+            this.linkInsuranceEdit.TabStop = true;
+            this.linkInsuranceEdit.Text = "Edit";
+            this.linkInsuranceEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceEdit_LinkClicked);
             // 
             // formPersonalHealthRecord
             // 
@@ -1268,6 +1390,9 @@
             this.toolStrip1.PerformLayout();
             this.groupPersonalDetails.ResumeLayout(false);
             this.groupPersonalDetails.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pATIENT_TBLBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pchr42563DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRIMARYCARETBLBindingSource)).EndInit();
             this.groupContactDetails.ResumeLayout(false);
             this.groupContactDetails.PerformLayout();
             this.groupEmergencyContactDetails.ResumeLayout(false);
@@ -1276,8 +1401,6 @@
             this.groupPrimeartCareProviderDetails.PerformLayout();
             this.groupHealthInsuranceDetails.ResumeLayout(false);
             this.groupHealthInsuranceDetails.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pchr42563DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pATIENT_TBLBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1354,11 +1477,11 @@
         private System.Windows.Forms.TextBox txtEmergencyContactDetailsEmail;
         private System.Windows.Forms.TextBox txtEmergencyContactDetailsFaxNumber;
         private System.Windows.Forms.TextBox txtEmergencyContactDetailsWorkTelephone;
-        private System.Windows.Forms.TextBox txtEmergencyDetailsMobileTelephone;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsMobileTelephone;
         private System.Windows.Forms.TextBox txtEmergencyContactDetailsHomeTelephone;
         private System.Windows.Forms.TextBox txtEmergencyContactDetailsCity;
         private System.Windows.Forms.TextBox txtEmergencyContactDetailsSuburb;
-        private System.Windows.Forms.TextBox txtEmergenctContactDetailsAddress;
+        private System.Windows.Forms.TextBox txtEmergencyContactDetailsAddress;
         private System.Windows.Forms.Label lblEmergencyContactDetailsEmail;
         private System.Windows.Forms.Label lblEmergencyContactDetailsFaxNumber;
         private System.Windows.Forms.Label lblEmergencyContactDetailsWorkTelephone;
@@ -1398,5 +1521,10 @@
         private System.Windows.Forms.BindingSource pATIENT_TBLBindingSource;
         private pchr42563DataSetTableAdapters.PATIENT_TBLTableAdapter pATIENT_TBLTableAdapter;
         private pchr42563DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingSource pRIMARYCARETBLBindingSource;
+        private pchr42563DataSetTableAdapters.PRIMARY_CARE_TBLTableAdapter pRIMARY_CARE_TBLTableAdapter;
+        private System.Windows.Forms.LinkLabel linkInsuranceCancel;
+        private System.Windows.Forms.LinkLabel linkInsuranceSave;
+        private System.Windows.Forms.LinkLabel linkInsuranceEdit;
     }
 }
