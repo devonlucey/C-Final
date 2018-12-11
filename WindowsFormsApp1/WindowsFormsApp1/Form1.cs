@@ -58,8 +58,12 @@ namespace WindowsFormsApp1
         // Open the Personal Health Record form and hide the login form.
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            pchr42563Entities entities = new pchr42563Entities();
+
+           //var patient = (from patient in entities.PATIENT_TBL where patient.)
+
             Form form3 = new formPersonalHealthRecord();
-            //this.Hide();
+            this.Hide();
             form3.Show();
             form3.Focus();
         }

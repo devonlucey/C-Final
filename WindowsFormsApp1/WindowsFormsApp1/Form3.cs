@@ -15,16 +15,27 @@ namespace WindowsFormsApp1
         public formPersonalHealthRecord()
         {
             InitializeComponent();
+            
         }
+
+        pchr42563Entities entities = new pchr42563Entities();
+        private PATIENT_TBL patient;
+
 
         private void tslPersonalDetails_Click(object sender, EventArgs e)
         {
-
+            Form form3 = new formPersonalHealthRecord();
+            this.Close();
+            form3.Show();
+            form3.Focus();
         }
 
         private void tslMedicalDetails_Click(object sender, EventArgs e)
         {
-
+            Form form4 = new Form4();
+            this.Close();
+            form4.Show();
+            form4.Focus();
         }
 
         private void tslComprehensivePersonalRecord_Click(object sender, EventArgs e)
@@ -37,22 +48,35 @@ namespace WindowsFormsApp1
 
         }
 
+        //Get a single patient from the patient table and set name and id to display
+
         private void formPersonalHealthRecord_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'pchr42563DataSet.PRIMARY_CARE_TBL' table. You can move, or remove it, as needed.
-            this.pRIMARY_CARE_TBLTableAdapter.Fill(this.pchr42563DataSet.PRIMARY_CARE_TBL);
-            // TODO: This line of code loads data into the 'pchr42563DataSet.PATIENT_TBL' table. You can move, or remove it, as needed.
-            // this.pATIENT_TBLTableAdapter.Fill(this.pchr42563DataSet.PATIENT_TBL);
-
+            patient = (from patients in entities.PATIENT_TBL select patient).First();
+           
+            //If there is no patient data load fake data
+            if (patient != null)
+            {
+                txtFirstName.Text = patient.FIRST_NAME;
+                txtIdentityNumber.Text = patient.PATIENT_ID;
+                txtLastName.Text = patient.LAST_NAME;
+            }
+            else
+            {  
+                txtIdentityNumber.Text = "0000000001";
+                txtFirstName.Text = "Devon";
+                txtLastName.Text = "Lucey";
+            }
+            
         }
+
 
         //Event Handlers for all of Form 3
 
         //Personal Details
         private void txtIdentityNumber_TextChanged(object sender, EventArgs e)
         {
-            string IdentityNumber = null;
-            this.Text = IdentityNumber;
+            
         }
 
         private void txtInitials_TextChanged(object sender, EventArgs e)
@@ -291,6 +315,12 @@ namespace WindowsFormsApp1
 
         private void linkPersonalSave_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //Getting a null exception on these 3 lines
+
+            //patient.FIRST_NAME =txtFirstName.Text.ToString();
+            //patient.LAST_NAME = txtLastName.Text;
+            //patient.PATIENT_ID = txtIdentityNumber.Text;
+
             linkPersonalCancel.Enabled = false;
             linkPersonalSave.Enabled = false;
             MessageBox.Show("Changes have been saved");
@@ -334,6 +364,16 @@ namespace WindowsFormsApp1
 
         private void linkContactDetailsSae_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            /*
+             * Null Error
+             * 
+            patient.ADDRESS_STREET = txtContactDetailsAddress.Text;
+            patient.ADDRESS_CITY = txtContactDetailsCity.Text;
+            patient.ADDRESS_STATE = txtContactDetailsSuburb.Text;
+            patient.ADDRESS_ZIP = txtContactDetailsPostalCode.Text;
+            patient.PHONE_HOME = txContactDetailsHomeTelephone.Text;
+            patient.PHONE_MOBILE = txtContactDetailsMobileTelephone.Text;
+            */
             txtContactDetailsAddress.ReadOnly = true;
             txtContactDetailsCity.ReadOnly = true;
             txtContactDetailsEmail.ReadOnly = true;
@@ -389,15 +429,6 @@ namespace WindowsFormsApp1
 
         private void linkEmergencyContactDetailsSave_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            txtEmergencyContactDetailsAddress.Text = null;
-            txtEmergencyContactDetailsCity.Text = null;
-            txtEmergencyContactDetailsEmail.Text = null;
-            txtEmergencyContactDetailsFaxNumber.Text = null;
-            txtEmergencyContactDetailsMobileTelephone.Text = null;
-            txtEmergencyContactDetailsPostalCode.Text = null;
-            txtEmergencyContactDetailsSuburb.Text = null;
-            txtEmergencyContactDetailsWorkTelephone.Text = null;
-            txtEmergencyContactDetailsHomeTelephone.Text = null;
             txtNextOfKin.Text = null;
             txtRelationship.Text = null;
 

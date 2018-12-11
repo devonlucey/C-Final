@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pchr42563Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ALLERGY_TBL">
+    <Key>
+      <PropertyRef Name="PATIENT_ID" />
+      <PropertyRef Name="ALLERGY_ID" />
+    </Key>
+    <Property Name="PATIENT_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="ALLERGY_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="ALLERGEN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ONSET_DATE" Type="date" Nullable="false" />
+    <Property Name="NOTE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="CONDITION">
+    <Key>
+      <PropertyRef Name="PATIENT_ID" />
+      <PropertyRef Name="CONDITION_ID" />
+    </Key>
+    <Property Name="PATIENT_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CONDITION_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CONDITION" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ONSET_DATE" Type="date" Nullable="false" />
+    <Property Name="ACUTE" Type="bit" Nullable="false" />
+    <Property Name="CHRONIC" Type="bit" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="IMMUNIZATION_TBL">
+    <Key>
+      <PropertyRef Name="PATIENT_ID" />
+      <PropertyRef Name="IMMUNIZATION_ID" />
+    </Key>
+    <Property Name="PATIENT_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="IMMUNIZATION_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="IMMUNIZATION" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATE" Type="date" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="MED_PROC_TBL">
+    <Key>
+      <PropertyRef Name="PATIENT_ID" />
+      <PropertyRef Name="PROCEDURE_ID" />
+    </Key>
+    <Property Name="PATIENT_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROCEDURE_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="MED_PROCEDURE" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATE" Type="date" Nullable="false" />
+    <Property Name="DOCTOR" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="MEDICATION_TBL">
+    <Key>
+      <PropertyRef Name="PATIENT_ID" />
+      <PropertyRef Name="MED_ID" />
+    </Key>
+    <Property Name="PATIENT_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="MED_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="MEDICATION" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATE" Type="date" Nullable="false" />
+    <Property Name="CHRONIC" Type="bit" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="PATIENT_TBL">
+    <Key>
+      <PropertyRef Name="PATIENT_ID" />
+    </Key>
+    <Property Name="PATIENT_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="LAST_NAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DATE_Of_BIRTH" Type="date" />
+    <Property Name="ADDRESS_STREET" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADDRESS_CITY" Type="nvarchar" MaxLength="20" />
+    <Property Name="ADDRESS_STATE" Type="nvarchar" MaxLength="20" />
+    <Property Name="ADDRESS_ZIP" Type="nchar" MaxLength="10" />
+    <Property Name="PHONE_HOME" Type="nchar" MaxLength="10" />
+    <Property Name="PHONE_MOBILE" Type="nchar" MaxLength="10" />
+    <Property Name="PRIMARY_ID" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PER_DETAILS_TBL">
+    <Key>
+      <PropertyRef Name="PATIENT_ID" />
+    </Key>
+    <Property Name="PATIENT_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="BLOOD_TYPE" Type="nchar" MaxLength="10" />
+    <Property Name="ORGAN_DONOR" Type="bit" />
+    <Property Name="HIV_STATUS" Type="bit" />
+    <Property Name="HEIGHT_INCHES" Type="smallint" />
+    <Property Name="WEIGHT_LBS" Type="smallint" />
+  </EntityType>
+  <EntityType Name="PRIMARY_CARE_TBL">
+    <Key>
+      <PropertyRef Name="PRIMARY_ID" />
+    </Key>
+    <Property Name="PRIMARY_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NAME_LAST" Type="nchar" MaxLength="10" />
+    <Property Name="NAME_FISRT" Type="nchar" MaxLength="10" />
+    <Property Name="TITLE" Type="nchar" MaxLength="10" />
+    <Property Name="SPECIALTY" Type="nchar" MaxLength="10" />
+    <Property Name="PHONE_OFFICE" Type="nchar" MaxLength="10" />
+    <Property Name="PHONE_MOBILE" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TEST_TBL">
+    <Key>
+      <PropertyRef Name="PATIENT_ID" />
+      <PropertyRef Name="TEST_ID" />
+    </Key>
+    <Property Name="PATIENT_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="TEST_ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="TEST" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RESULT" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATE" Type="date" Nullable="false" />
+    <Property Name="NOTE" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_ALLERGY_TBL_PATIENT_TBL">
+    <End Role="PATIENT_TBL" Type="Self.PATIENT_TBL" Multiplicity="1" />
+    <End Role="ALLERGY_TBL" Type="Self.ALLERGY_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PATIENT_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Principal>
+      <Dependent Role="ALLERGY_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONDITION_PATIENT_TBL">
+    <End Role="PATIENT_TBL" Type="Self.PATIENT_TBL" Multiplicity="1" />
+    <End Role="CONDITION" Type="Self.CONDITION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PATIENT_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Principal>
+      <Dependent Role="CONDITION">
+        <PropertyRef Name="PATIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IMMUNIZATION_TBL_PATIENT_TBL">
+    <End Role="PATIENT_TBL" Type="Self.PATIENT_TBL" Multiplicity="1" />
+    <End Role="IMMUNIZATION_TBL" Type="Self.IMMUNIZATION_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PATIENT_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Principal>
+      <Dependent Role="IMMUNIZATION_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MED_PROC_TBL_PATIENT_TBL">
+    <End Role="PATIENT_TBL" Type="Self.PATIENT_TBL" Multiplicity="1" />
+    <End Role="MED_PROC_TBL" Type="Self.MED_PROC_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PATIENT_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Principal>
+      <Dependent Role="MED_PROC_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEDICATION_TBL_PATIENT_TBL">
+    <End Role="PATIENT_TBL" Type="Self.PATIENT_TBL" Multiplicity="1" />
+    <End Role="MEDICATION_TBL" Type="Self.MEDICATION_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PATIENT_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Principal>
+      <Dependent Role="MEDICATION_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PER_DETAILS_TBL_PATIENT_TBL">
+    <End Role="PATIENT_TBL" Type="Self.PATIENT_TBL" Multiplicity="1" />
+    <End Role="PER_DETAILS_TBL" Type="Self.PER_DETAILS_TBL" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PATIENT_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Principal>
+      <Dependent Role="PER_DETAILS_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEST_TBL_PATIENT_TBL">
+    <End Role="PATIENT_TBL" Type="Self.PATIENT_TBL" Multiplicity="1" />
+    <End Role="TEST_TBL" Type="Self.TEST_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PATIENT_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Principal>
+      <Dependent Role="TEST_TBL">
+        <PropertyRef Name="PATIENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="pchr42563ModelStoreContainer">
+    <EntitySet Name="ALLERGY_TBL" EntityType="Self.ALLERGY_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONDITION" EntityType="Self.CONDITION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IMMUNIZATION_TBL" EntityType="Self.IMMUNIZATION_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MED_PROC_TBL" EntityType="Self.MED_PROC_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MEDICATION_TBL" EntityType="Self.MEDICATION_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PATIENT_TBL" EntityType="Self.PATIENT_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PER_DETAILS_TBL" EntityType="Self.PER_DETAILS_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRIMARY_CARE_TBL" EntityType="Self.PRIMARY_CARE_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TEST_TBL" EntityType="Self.TEST_TBL" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ALLERGY_TBL_PATIENT_TBL" Association="Self.FK_ALLERGY_TBL_PATIENT_TBL">
+      <End Role="PATIENT_TBL" EntitySet="PATIENT_TBL" />
+      <End Role="ALLERGY_TBL" EntitySet="ALLERGY_TBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONDITION_PATIENT_TBL" Association="Self.FK_CONDITION_PATIENT_TBL">
+      <End Role="PATIENT_TBL" EntitySet="PATIENT_TBL" />
+      <End Role="CONDITION" EntitySet="CONDITION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IMMUNIZATION_TBL_PATIENT_TBL" Association="Self.FK_IMMUNIZATION_TBL_PATIENT_TBL">
+      <End Role="PATIENT_TBL" EntitySet="PATIENT_TBL" />
+      <End Role="IMMUNIZATION_TBL" EntitySet="IMMUNIZATION_TBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MED_PROC_TBL_PATIENT_TBL" Association="Self.FK_MED_PROC_TBL_PATIENT_TBL">
+      <End Role="PATIENT_TBL" EntitySet="PATIENT_TBL" />
+      <End Role="MED_PROC_TBL" EntitySet="MED_PROC_TBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEDICATION_TBL_PATIENT_TBL" Association="Self.FK_MEDICATION_TBL_PATIENT_TBL">
+      <End Role="PATIENT_TBL" EntitySet="PATIENT_TBL" />
+      <End Role="MEDICATION_TBL" EntitySet="MEDICATION_TBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PER_DETAILS_TBL_PATIENT_TBL" Association="Self.FK_PER_DETAILS_TBL_PATIENT_TBL">
+      <End Role="PATIENT_TBL" EntitySet="PATIENT_TBL" />
+      <End Role="PER_DETAILS_TBL" EntitySet="PER_DETAILS_TBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEST_TBL_PATIENT_TBL" Association="Self.FK_TEST_TBL_PATIENT_TBL">
+      <End Role="PATIENT_TBL" EntitySet="PATIENT_TBL" />
+      <End Role="TEST_TBL" EntitySet="TEST_TBL" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

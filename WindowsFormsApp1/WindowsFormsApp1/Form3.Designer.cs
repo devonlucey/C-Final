@@ -136,6 +136,9 @@
             this.lblPrimaryCareProviderDetailsSpecialty = new System.Windows.Forms.Label();
             this.lblPrimaryCareProviderDetailsFullName = new System.Windows.Forms.Label();
             this.groupHealthInsuranceDetails = new System.Windows.Forms.GroupBox();
+            this.linkInsuranceCancel = new System.Windows.Forms.LinkLabel();
+            this.linkInsuranceSave = new System.Windows.Forms.LinkLabel();
+            this.linkInsuranceEdit = new System.Windows.Forms.LinkLabel();
             this.txtHealthInsuranceDetailsInsurancePlan = new System.Windows.Forms.TextBox();
             this.txtHealthInsuranceDetailsInsurer = new System.Windows.Forms.TextBox();
             this.txtHealthInsuranceDetailsInsuranceNumber = new System.Windows.Forms.TextBox();
@@ -145,9 +148,6 @@
             this.pATIENT_TBLTableAdapter = new WindowsFormsApp1.pchr42563DataSetTableAdapters.PATIENT_TBLTableAdapter();
             this.tableAdapterManager = new WindowsFormsApp1.pchr42563DataSetTableAdapters.TableAdapterManager();
             this.pRIMARY_CARE_TBLTableAdapter = new WindowsFormsApp1.pchr42563DataSetTableAdapters.PRIMARY_CARE_TBLTableAdapter();
-            this.linkInsuranceCancel = new System.Windows.Forms.LinkLabel();
-            this.linkInsuranceSave = new System.Windows.Forms.LinkLabel();
-            this.linkInsuranceEdit = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picProfileImage)).BeginInit();
             this.groupLoginDetails.SuspendLayout();
             this.groupPassword.SuspendLayout();
@@ -1261,6 +1261,41 @@
             this.groupHealthInsuranceDetails.TabStop = false;
             this.groupHealthInsuranceDetails.Text = "Health Insurance Details";
             // 
+            // linkInsuranceCancel
+            // 
+            this.linkInsuranceCancel.AutoSize = true;
+            this.linkInsuranceCancel.Enabled = false;
+            this.linkInsuranceCancel.Location = new System.Drawing.Point(433, 114);
+            this.linkInsuranceCancel.Name = "linkInsuranceCancel";
+            this.linkInsuranceCancel.Size = new System.Drawing.Size(40, 13);
+            this.linkInsuranceCancel.TabIndex = 26;
+            this.linkInsuranceCancel.TabStop = true;
+            this.linkInsuranceCancel.Text = "Cancel";
+            this.linkInsuranceCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceCancel_LinkClicked);
+            // 
+            // linkInsuranceSave
+            // 
+            this.linkInsuranceSave.AutoSize = true;
+            this.linkInsuranceSave.Enabled = false;
+            this.linkInsuranceSave.Location = new System.Drawing.Point(395, 114);
+            this.linkInsuranceSave.Name = "linkInsuranceSave";
+            this.linkInsuranceSave.Size = new System.Drawing.Size(32, 13);
+            this.linkInsuranceSave.TabIndex = 25;
+            this.linkInsuranceSave.TabStop = true;
+            this.linkInsuranceSave.Text = "Save";
+            this.linkInsuranceSave.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceSave_LinkClicked);
+            // 
+            // linkInsuranceEdit
+            // 
+            this.linkInsuranceEdit.AutoSize = true;
+            this.linkInsuranceEdit.Location = new System.Drawing.Point(364, 114);
+            this.linkInsuranceEdit.Name = "linkInsuranceEdit";
+            this.linkInsuranceEdit.Size = new System.Drawing.Size(25, 13);
+            this.linkInsuranceEdit.TabIndex = 24;
+            this.linkInsuranceEdit.TabStop = true;
+            this.linkInsuranceEdit.Text = "Edit";
+            this.linkInsuranceEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceEdit_LinkClicked);
+            // 
             // txtHealthInsuranceDetailsInsurancePlan
             // 
             this.txtHealthInsuranceDetailsInsurancePlan.Location = new System.Drawing.Point(115, 76);
@@ -1329,41 +1364,6 @@
             // pRIMARY_CARE_TBLTableAdapter
             // 
             this.pRIMARY_CARE_TBLTableAdapter.ClearBeforeFill = true;
-            // 
-            // linkInsuranceCancel
-            // 
-            this.linkInsuranceCancel.AutoSize = true;
-            this.linkInsuranceCancel.Enabled = false;
-            this.linkInsuranceCancel.Location = new System.Drawing.Point(433, 114);
-            this.linkInsuranceCancel.Name = "linkInsuranceCancel";
-            this.linkInsuranceCancel.Size = new System.Drawing.Size(40, 13);
-            this.linkInsuranceCancel.TabIndex = 26;
-            this.linkInsuranceCancel.TabStop = true;
-            this.linkInsuranceCancel.Text = "Cancel";
-            this.linkInsuranceCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceCancel_LinkClicked);
-            // 
-            // linkInsuranceSave
-            // 
-            this.linkInsuranceSave.AutoSize = true;
-            this.linkInsuranceSave.Enabled = false;
-            this.linkInsuranceSave.Location = new System.Drawing.Point(395, 114);
-            this.linkInsuranceSave.Name = "linkInsuranceSave";
-            this.linkInsuranceSave.Size = new System.Drawing.Size(32, 13);
-            this.linkInsuranceSave.TabIndex = 25;
-            this.linkInsuranceSave.TabStop = true;
-            this.linkInsuranceSave.Text = "Save";
-            this.linkInsuranceSave.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceSave_LinkClicked);
-            // 
-            // linkInsuranceEdit
-            // 
-            this.linkInsuranceEdit.AutoSize = true;
-            this.linkInsuranceEdit.Location = new System.Drawing.Point(364, 114);
-            this.linkInsuranceEdit.Name = "linkInsuranceEdit";
-            this.linkInsuranceEdit.Size = new System.Drawing.Size(25, 13);
-            this.linkInsuranceEdit.TabIndex = 24;
-            this.linkInsuranceEdit.TabStop = true;
-            this.linkInsuranceEdit.Text = "Edit";
-            this.linkInsuranceEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkInsuranceEdit_LinkClicked);
             // 
             // formPersonalHealthRecord
             // 

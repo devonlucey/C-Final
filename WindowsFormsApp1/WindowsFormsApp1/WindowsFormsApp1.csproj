@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ALLERGY_TBL.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONDITION.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +78,24 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMMUNIZATION_TBL.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MEDICATION_TBL.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MED_PROC_TBL.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PATIENT_TBL.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="pchr42563DataSet.cs">
       <DependentUpon>pchr42563DataSet.xsd</DependentUpon>
     </Compile>
@@ -71,8 +104,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pchr42563DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PCHRModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PCHRModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCHRModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCHRModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PCHRModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PER_DETAILS_TBL.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRIMARY_CARE_TBL.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TEST_TBL.cs">
+      <DependentUpon>PCHRModel.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +151,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="pchr42563DataSet.xsc">
       <DependentUpon>pchr42563DataSet.xsd</DependentUpon>
     </None>
@@ -101,6 +162,13 @@
     </None>
     <None Include="pchr42563DataSet.xss">
       <DependentUpon>pchr42563DataSet.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="PCHRModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PCHRModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PCHRModel.edmx.diagram">
+      <DependentUpon>PCHRModel.edmx</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -123,6 +191,19 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>pchr42563.mdf</DependentUpon>
     </Content>
+    <Content Include="PCHRModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PCHRModel.Context.cs</LastGenOutput>
+      <DependentUpon>PCHRModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="PCHRModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PCHRModel.edmx</DependentUpon>
+      <LastGenOutput>PCHRModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

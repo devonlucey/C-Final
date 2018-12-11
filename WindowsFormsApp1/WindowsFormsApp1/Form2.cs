@@ -69,7 +69,25 @@ namespace WindowsFormsApp1
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            PATIENT_TBL pateint = new PATIENT_TBL() {
+                PATIENT_ID = txtIdNumber.Text,
+                LAST_NAME = txtLastName.Text,
+                FIRST_NAME = txtFirstName.Text,
+                ADDRESS_STREET = string.Empty,
+                ADDRESS_CITY = string.Empty,
+                ADDRESS_STATE = string.Empty,
+                ADDRESS_ZIP = string.Empty,
+                PHONE_HOME = string.Empty,
+                PHONE_MOBILE = string.Empty,
+                PRIMARY_ID = string.Empty
+            };
 
+            pchr42563Entities entities = new pchr42563Entities();
+            entities.PATIENT_TBL.Add(pateint);
+            entities.SaveChanges();
+
+            MessageBox.Show("Registration Complete");
+            this.Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -79,8 +97,6 @@ namespace WindowsFormsApp1
 
         private void formRegisteration_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'pchr42563DataSet.PATIENT_TBL' table. You can move, or remove it, as needed.
-            this.pATIENT_TBLTableAdapter.Fill(this.pchr42563DataSet.PATIENT_TBL);
 
         }
 
